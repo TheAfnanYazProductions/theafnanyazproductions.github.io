@@ -61,6 +61,60 @@ jobs:
           "$SDKMANAGER" --sdk_root="$ANDROID_HOME" "build-tools;36.0.0"
           "$SDKMANAGER" --sdk_root="$ANDROID_HOME" "platform-tools"
 
+      - name: Repair Android Resources
+        run: |
+          RES="$PROJECT_DIR/app/src/main/res"
+
+          mkdir -p "$RES/values" "$RES/mipmap-anydpi"
+
+          if ! grep -Rqs 'name="app_name"' "$RES" 2>/dev/null; then
+            if [ -f "$RES/values/strings.xml" ]; then
+              sed -i 's#</resources>#    <string name="app_name">AURA</string>\n</resources>#' "$RES/values/strings.xml"
+            else
+              cat > "$RES/values/strings.xml" <<'EOF'
+          <resources>
+              <string name="app_name">AURA</string>
+          </resources>
+          EOF
+            fi
+          fi
+
+          if ! grep -Rqs 'name="Theme.Aura"' "$RES" 2>/dev/null; then
+            cat > "$RES/values/aura_theme.xml" <<'EOF'
+          <resources>
+              <style name="Theme.Aura" parent="@android:style/Theme.Material.Light.NoActionBar">
+                  <item name="android:fontFamily">sans</item>
+                  <item name="android:colorAccent">#00D1FF</item>
+                  <item name="android:windowLightStatusBar">false</item>
+                  <item name="android:statusBarColor">#080914</item>
+                  <item name="android:navigationBarColor">#080914</item>
+                  <item name="android:windowBackground">#080914</item>
+              </style>
+          </resources>
+          EOF
+          fi
+
+          for ICON in ic_launcher ic_launcher_round; do
+            if [ ! -f "$RES/mipmap-anydpi/$ICON.xml" ] && [ ! -f "$RES/mipmap-anydpi-v26/$ICON.xml" ]; then
+              cat > "$RES/mipmap-anydpi/$ICON.xml" <<'EOF'
+          <vector xmlns:android="http://schemas.android.com/apk/res/android"
+              android:width="48dp"
+              android:height="48dp"
+              android:viewportWidth="48"
+              android:viewportHeight="48">
+              <path
+                  android:fillColor="#080914"
+                  android:pathData="M24,2 A22,22 0 1,0 24,46 A22,22 0 1,0 24,2"/>
+              <path
+                  android:fillColor="#00D1FF"
+                  android:pathData="M29,9 L29,29 C29,34 24,38 19,37 C15,36 14,32 17,29 C19,27 23,26 27,28 L27,13 L37,10 L37,15 L29,17 Z"/>
+          </vector>
+          EOF
+            fi
+          done
+
+          echo "Android resources checked and repaired."
+
       - name: Build AURA APK
         run: |
           cd "$PROJECT_DIR"
