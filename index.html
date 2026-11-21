@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,9 +102,7 @@ border:1px solid #f5b72e55;
 box-shadow:0 0 20px #f5b72e20;
 }
 
-.brand-name{
-color:var(--gold2);
-}
+.brand-name{color:var(--gold2)}
 
 .nav-actions{
 display:flex;
@@ -678,13 +675,13 @@ Discover your next favourite game. From thrilling rides to action-packed adventu
 <h2>Find Your Next Game<span class="gradient">.</span></h2>
 <p>Search the collection. Pick your adventure.</p>
 </div>
-<div class="count" id="gameCount">09 GAMES · 01 AI MODEL</div>
+<div class="count" id="gameCount">09 GAMES · 01 AI MODEL · 01 MUSIC APP</div>
 </div>
 
 <label class="search-wrap">
 <span class="search-symbol">⌕</span>
 <input id="gameSearch" type="search"
-placeholder="Search games, AI models, racing, action..."
+placeholder="Search games, AI models, music, racing, action..."
 autocomplete="off"
 aria-label="Search games and AI models">
 <span class="search-key">SEARCH</span>
@@ -697,6 +694,7 @@ aria-label="Search games and AI models">
 <button class="filter" data-filter="sports" type="button">🚴 Sports</button>
 <button class="filter" data-filter="arcade" type="button">🎮 Arcade</button>
 <button class="filter" data-filter="ai" type="button">🤖 AI MODELS</button>
+<button class="filter" data-filter="music" type="button">🎵 MUSIC</button>
 </div>
 
 <div class="games" id="gamesGrid">
@@ -857,6 +855,26 @@ onerror="this.style.display='none';this.nextElementSibling.style.display='block'
 </div>
 </article>
 
+<!-- AURA Music Player -->
+<article class="game" data-name="aura aura music player music streaming audio premium android music beyond boundaries" data-category="music">
+<div class="game-art">
+<span class="game-tag">PREMIUM MUSIC PLAYER</span>
+<img
+src="ic_launcher-playstore.png"
+alt="AURA Music Player Logo"
+onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+<span class="art-emoji" style="display:none">🎵</span>
+</div>
+<div class="game-info">
+<h3>AURA Music Player</h3>
+<p>Music Beyond Boundaries. Experience a premium music experience with AURA.</p>
+<div class="game-bottom">
+<span class="game-type">MUSIC · ENTERTAINMENT</span>
+<a class="download-btn" href="aura.apk" download>DOWNLOAD ↗</a>
+</div>
+</div>
+</article>
+
 </div>
 
 <div class="empty-state" id="emptyState">
@@ -933,6 +951,7 @@ const query=search.value.trim().toLowerCase();
 let visible=0;
 let gameCount=0;
 let aiCount=0;
+let musicCount=0;
 
 cards.forEach(card=>{
 
@@ -950,6 +969,8 @@ visible++;
 
 if(category==="ai"){
 aiCount++;
+}else if(category==="music"){
+musicCount++;
 }else{
 gameCount++;
 }
@@ -960,7 +981,7 @@ gameCount++;
 count.textContent=
 String(visible).padStart(2,"0")+
 (visible===1?" RESULT":" RESULTS")+
-" · "+gameCount+" GAMES · "+aiCount+" AI MODELS";
+" · "+gameCount+" GAMES · "+aiCount+" AI MODELS · "+musicCount+" MUSIC APP";
 
 empty.style.display=visible===0?"block":"none";
 
