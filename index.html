@@ -8,20 +8,26 @@
 
 <meta name="google-site-verification" content="ZeACEChF22ZR6L-upr85EX3WahBWdhCHl7Y7Pz_6yfo">
 
-<title>FOZAYX Games | Games, Guides & Digital Experiences</title>
-
-<meta name="description" content="Explore the FOZAYX Games collection. Discover mobile games, read game information and Android installation guides, and explore digital experiences.">
-<meta name="keywords" content="FOZAYX Games, Android games, mobile games, BMX Boy, racing games, arcade games, action games, game guides">
+<title>FOZAYX Games | Original Android Games, Apps & Digital Projects</title>
+<meta name="description" content="Discover original Android game projects, mobile applications and digital experiments from FOZAYX Games. Explore project information, Android APK installation guides, app details and development updates.">
+<meta name="keywords" content="FOZAYX Games, The Afnan Yaz Productions, original Android games, Android game development, mobile games, APK installation guide, Android applications, AURA Music Player, Arena AI">
 <meta name="author" content="The Afnan Yaz Productions">
 <meta name="robots" content="index, follow">
 <meta name="application-name" content="FOZAYX Games">
+<meta name="color-scheme" content="dark">
+
 <link rel="canonical" href="https://fozayelafnan.github.io/theafnanyazproductions.github.io/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="FOZAYX Games | Official Gaming Universe">
-<meta property="og:description" content="Discover mobile games, explore game information and read helpful Android gaming guides.">
+<meta property="og:title" content="FOZAYX Games | Android Games & Digital Projects">
+<meta property="og:description" content="Explore original Android game projects, digital applications, development information and practical Android guides from FOZAYX Games.">
 <meta property="og:image" content="https://fozayelafnan.github.io/theafnanyazproductions.github.io/fx-logo.png">
 <meta property="og:url" content="https://fozayelafnan.github.io/theafnanyazproductions.github.io/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FOZAYX Games">
+<meta name="twitter:description" content="Original Android projects, mobile applications and practical guides.">
+<meta name="twitter:image" content="https://fozayelafnan.github.io/theafnanyazproductions.github.io/fx-logo.png">
 
 <link rel="icon" type="image/png" sizes="512x512" href="fx-logo.png">
 <link rel="apple-touch-icon" href="fx-logo.png">
@@ -37,8 +43,25 @@ gtag('config', 'G-SWFJJPR374');
 </script>
 
 <!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4690522392771113"
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4690522392771113"
 crossorigin="anonymous"></script>
+
+<!-- Website structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "FOZAYX Games",
+  "url": "https://fozayelafnan.github.io/theafnanyazproductions.github.io/",
+  "description": "An independent digital project featuring original Android games, applications, project information and Android guides.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Afnan Yaz Productions"
+  },
+  "inLanguage": "en"
+}
+</script>
 
 <style>
 :root{
@@ -50,12 +73,11 @@ crossorigin="anonymous"></script>
 --gold:#f5b72e;
 --gold2:#ffda75;
 --line:rgba(255,195,65,.15);
+--green:#8bc99b;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-
 html{scroll-behavior:smooth;scroll-padding-top:25px}
-
 body{
 min-height:100vh;
 background:
@@ -66,7 +88,6 @@ color:var(--white);
 font-family:Inter,"Segoe UI",Arial,sans-serif;
 overflow-x:hidden;
 }
-
 a{color:inherit;text-decoration:none}
 button,input{font:inherit}
 button{cursor:pointer}
@@ -77,7 +98,6 @@ background:linear-gradient(90deg,#9d6414,#ffdb70,#f39b17,#fff0a6,#9d6414);
 background-size:250% 100%;
 animation:rainbow 7s linear infinite;
 }
-
 @keyframes rainbow{to{background-position:250% 0}}
 
 .navbar{
@@ -89,7 +109,6 @@ align-items:center;
 justify-content:space-between;
 gap:16px;
 }
-
 .brand{
 display:flex;
 align-items:center;
@@ -99,617 +118,372 @@ font-size:18px;
 letter-spacing:.5px;
 white-space:nowrap;
 }
-
 .brand-logo{
-width:43px;
-height:43px;
-object-fit:cover;
-border-radius:12px;
-border:1px solid #f5b72e55;
+width:43px;height:43px;object-fit:cover;
+border-radius:12px;border:1px solid #f5b72e55;
 box-shadow:0 0 20px #f5b72e20;
 }
-
 .brand-name{color:var(--gold2)}
-
 .nav-actions{
-display:flex;
-align-items:center;
-gap:9px;
-flex-wrap:wrap;
-justify-content:flex-end;
+display:flex;align-items:center;gap:9px;
+flex-wrap:wrap;justify-content:flex-end;
 }
-
 .menu-link{
-padding:10px 13px;
-border-radius:11px;
-border:1px solid var(--line);
-color:#e9d8b2;
-font-size:11px;
-font-weight:800;
+padding:10px 13px;border-radius:11px;
+border:1px solid var(--line);color:#e9d8b2;
+font-size:11px;font-weight:800;
 }
-
 .menu-link:hover{background:#f5b72e15}
 
-.hero,.section{
-width:min(1250px,92%);
-margin:auto;
-}
-
+.hero,.section{width:min(1250px,92%);margin:auto}
 .hero{margin-top:24px}
-
 .hero-card{
-min-height:420px;
-border-radius:28px;
+min-height:420px;border-radius:28px;
 border:1px solid #f5b72e30;
-position:relative;
-overflow:hidden;
-display:flex;
-align-items:center;
+position:relative;overflow:hidden;
+display:flex;align-items:center;
 padding:clamp(28px,6vw,75px);
 background:
 radial-gradient(ellipse at 85% 40%,#f5b72e25,transparent 42%),
 radial-gradient(ellipse at 75% 90%,#d28b2418,transparent 35%),
 linear-gradient(125deg,#211b10,#13120e 55%,#17130b);
 }
-
 .hero-card:before{
-content:"";
-position:absolute;
-width:340px;
-height:340px;
-right:7%;
-top:40px;
-border:1px solid #f5b72e20;
+content:"";position:absolute;width:340px;height:340px;
+right:7%;top:40px;border:1px solid #f5b72e20;
 border-radius:50%;
 box-shadow:0 0 0 35px #f5b72e08,0 0 0 75px #f5b72e05;
 }
-
-.hero-content{
-max-width:650px;
-position:relative;
-z-index:2;
-}
-
+.hero-content{max-width:690px;position:relative;z-index:2}
 .pill{
-display:inline-flex;
-align-items:center;
-gap:8px;
-border:1px solid #f5b72e50;
-background:#f5b72e12;
-color:var(--gold2);
-border-radius:40px;
-padding:9px 14px;
-font-size:10px;
-letter-spacing:1.8px;
-font-weight:900;
+display:inline-flex;align-items:center;gap:8px;
+border:1px solid #f5b72e50;background:#f5b72e12;
+color:var(--gold2);border-radius:40px;padding:9px 14px;
+font-size:10px;letter-spacing:1.8px;font-weight:900;
 }
-
 .live-dot{
-width:7px;
-height:7px;
-border-radius:50%;
-background:var(--gold);
-box-shadow:0 0 10px var(--gold);
+width:7px;height:7px;border-radius:50%;
+background:var(--gold);box-shadow:0 0 10px var(--gold);
 }
-
 h1{
-margin-top:22px;
-font-size:clamp(40px,7vw,76px);
-line-height:.99;
-letter-spacing:-3px;
-font-weight:950;
+margin-top:22px;font-size:clamp(40px,7vw,76px);
+line-height:.99;letter-spacing:-3px;font-weight:950;
 }
-
 .gradient{
 background:linear-gradient(95deg,#fff0bd,#ffca45 55%,#e58a16);
--webkit-background-clip:text;
-background-clip:text;
-color:transparent;
+-webkit-background-clip:text;background-clip:text;color:transparent;
 }
-
 .hero p{
-color:#c1b8a5;
-line-height:1.9;
-max-width:540px;
-margin-top:21px;
-font-size:14px;
+color:#c1b8a5;line-height:1.9;max-width:620px;
+margin-top:21px;font-size:14px;
 }
-
-.hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:27px;
-}
-
+.hero-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
 .primary-btn,.secondary-btn{
-display:inline-flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-padding:14px 20px;
-border-radius:12px;
-font-size:13px;
-font-weight:900;
+display:inline-flex;justify-content:center;align-items:center;
+gap:10px;padding:14px 20px;border-radius:12px;
+font-size:13px;font-weight:900;
 }
-
 .primary-btn{
 background:linear-gradient(110deg,#f5b72e,#e28b17);
-color:#171006;
-box-shadow:0 5px 22px #f5b72e25;
+color:#171006;box-shadow:0 5px 22px #f5b72e25;
 }
-
 .secondary-btn{
-border:1px solid #f5b72e40;
-background:#ffffff08;
-color:#f1dfb6;
+border:1px solid #f5b72e40;background:#ffffff08;color:#f1dfb6;
 }
-
 .floating-symbol{
-position:absolute;
-right:14%;
-top:30%;
+position:absolute;right:14%;top:30%;
 font-size:clamp(80px,15vw,155px);
-opacity:.12;
-color:var(--gold);
-transform:rotate(-13deg);
+opacity:.12;color:var(--gold);transform:rotate(-13deg);
 }
 
 .section{padding-top:70px}
-
 .section-top{
-display:flex;
-align-items:end;
-justify-content:space-between;
-gap:18px;
-margin-bottom:25px;
+display:flex;align-items:end;justify-content:space-between;
+gap:18px;margin-bottom:25px;
 }
-
 .overline{
-color:var(--gold);
-font-size:10px;
-letter-spacing:2.4px;
-font-weight:900;
+color:var(--gold);font-size:10px;
+letter-spacing:2.4px;font-weight:900;
 }
-
 .section-top h2{
 font-size:clamp(27px,4vw,38px);
-letter-spacing:-1.2px;
-margin-top:5px;
+letter-spacing:-1.2px;margin-top:5px;
 }
-
 .section-top p{
-margin-top:7px;
-color:var(--muted);
-font-size:13px;
-line-height:1.8;
+margin-top:7px;color:var(--muted);
+font-size:13px;line-height:1.8;
 }
-
 .count{
-padding:9px 13px;
-border:1px solid var(--line);
-border-radius:12px;
-color:#e6d5af;
-background:#ffffff05;
-font-size:11px;
-white-space:nowrap;
+padding:9px 13px;border:1px solid var(--line);
+border-radius:12px;color:#e6d5af;
+background:#ffffff05;font-size:11px;
 }
 
 .search-wrap{
-display:flex;
-align-items:center;
-gap:12px;
-padding:7px 10px 7px 17px;
-min-height:61px;
-border:1px solid #f5b72e45;
-border-radius:16px;
+display:flex;align-items:center;gap:12px;
+padding:7px 10px 7px 17px;min-height:61px;
+border:1px solid #f5b72e45;border-radius:16px;
 background:linear-gradient(120deg,#1c1911,#11100c);
 }
-
 .search-symbol{font-size:20px;color:var(--gold)}
-
 .search-wrap input{
-flex:1;
-min-width:0;
-outline:none;
-border:0;
-background:transparent;
-color:white;
-font-size:14px;
+flex:1;min-width:0;outline:none;border:0;
+background:transparent;color:white;font-size:14px;
 }
-
 .search-wrap input::placeholder{color:#89806e}
-
 .search-key{
-color:#b8a987;
-font-size:10px;
-padding:6px 8px;
-border:1px solid var(--line);
-border-radius:7px;
+color:#b8a987;font-size:10px;padding:6px 8px;
+border:1px solid var(--line);border-radius:7px;
 }
-
 .filters{
-display:flex;
-gap:9px;
-overflow-x:auto;
-padding:18px 0 7px;
-scrollbar-width:none;
+display:flex;gap:9px;overflow-x:auto;
+padding:18px 0 7px;scrollbar-width:none;
 }
-
 .filters::-webkit-scrollbar{display:none}
-
 .filter{
-flex-shrink:0;
-border:1px solid var(--line);
-border-radius:11px;
-padding:10px 15px;
-color:#c0b69f;
-background:#ffffff05;
-font-size:12px;
-font-weight:800;
+flex-shrink:0;border:1px solid var(--line);
+border-radius:11px;padding:10px 15px;
+color:#c0b69f;background:#ffffff05;
+font-size:12px;font-weight:800;
 }
-
 .filter.active{
-color:#171006;
-background:linear-gradient(110deg,#f5b72e,#e9a027);
+color:#171006;background:linear-gradient(110deg,#f5b72e,#e9a027);
 border-color:transparent;
 }
 
-.games{
+.collection-summary{
 display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));
-gap:20px;
-margin-top:20px;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:12px;margin:20px 0;
+}
+.summary-item{
+border:1px solid var(--line);
+border-radius:13px;padding:16px;
+background:#ffffff05;
+}
+.summary-item strong{
+display:block;color:var(--gold2);
+font-size:23px;margin-bottom:5px;
+}
+.summary-item span{
+color:var(--muted);font-size:10px;
+letter-spacing:.7px;font-weight:800;
 }
 
+.games{
+display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+gap:20px;margin-top:20px;
+}
 .game{
-min-width:0;
-overflow:hidden;
-border:1px solid var(--line);
-border-radius:19px;
+min-width:0;overflow:hidden;
+border:1px solid var(--line);border-radius:19px;
 background:linear-gradient(145deg,#1c1912,#100f0c);
 transition:.25s;
 }
-
 .game:hover{
-transform:translateY(-5px);
-border-color:#f5b72e80;
+transform:translateY(-5px);border-color:#f5b72e80;
 box-shadow:0 18px 45px #00000050;
 }
-
 .game-art{
-min-height:205px;
-padding:23px;
-display:grid;
-place-items:center;
-position:relative;
-overflow:hidden;
-background:
-radial-gradient(ellipse at 50% 50%,#f5b72e18,transparent 70%),
-#19160f;
+min-height:205px;padding:23px;display:grid;
+place-items:center;position:relative;overflow:hidden;
+background:radial-gradient(ellipse at 50% 50%,#f5b72e18,transparent 70%),#19160f;
 }
-
 .game-art:before{
-content:"";
-position:absolute;
-width:155px;
-height:155px;
-border:1px solid #f5b72e15;
-border-radius:50%;
+content:"";position:absolute;width:155px;height:155px;
+border:1px solid #f5b72e15;border-radius:50%;
 box-shadow:0 0 0 22px #f5b72e05,0 0 0 45px #f5b72e03;
 }
-
 .game-art img{
-position:relative;
-z-index:1;
-width:145px;
-height:145px;
-object-fit:contain;
-border-radius:17px;
+position:relative;z-index:1;width:145px;height:145px;
+object-fit:contain;border-radius:17px;
 filter:drop-shadow(0 10px 22px #00000055);
 }
-
-.art-emoji{
-position:relative;
-z-index:1;
-font-size:83px;
-}
-
+.art-emoji{position:relative;z-index:1;font-size:83px}
 .game-tag{
-position:absolute;
-left:13px;
-top:13px;
-z-index:2;
-padding:6px 9px;
-border:1px solid #f5b72e30;
-border-radius:8px;
-background:#080808cc;
-color:#ffda75;
-font-size:9px;
-font-weight:900;
-letter-spacing:1px;
+position:absolute;left:13px;top:13px;z-index:2;
+padding:6px 9px;border:1px solid #f5b72e30;
+border-radius:8px;background:#080808cc;
+color:#ffda75;font-size:9px;font-weight:900;letter-spacing:1px;
 }
-
+.preview-label{
+position:absolute;right:12px;bottom:10px;z-index:2;
+color:#c8b991;background:#080808bb;
+padding:5px 7px;border-radius:6px;
+font-size:8px;letter-spacing:.6px;
+}
 .game-info{padding:19px}
-
 .game-info h3{font-size:18px;letter-spacing:-.3px}
-
 .game-info p{
-margin-top:8px;
-color:var(--muted);
-font-size:12px;
-line-height:1.8;
+margin-top:8px;color:var(--muted);
+font-size:12px;line-height:1.8;
 }
-
+.ownership{
+display:inline-block;margin-top:10px;
+padding:6px 8px;border-radius:7px;
+font-size:9px;font-weight:900;letter-spacing:.7px;
+border:1px solid var(--line);
+}
+.ownership.original{
+color:#b7e6c2;background:#72c58a12;
+border-color:#72c58a35;
+}
+.ownership.thirdparty{
+color:#f3c7a0;background:#e69b5310;
+border-color:#e69b5335;
+}
+.ownership.reference{
+color:#e3d1a0;background:#f5b72e0c;
+}
 .game-bottom{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:10px;
-margin-top:17px;
+display:flex;align-items:center;justify-content:space-between;
+gap:10px;margin-top:17px;
 }
-
-.game-type{
-color:#b5a98f;
-font-size:10px;
-font-weight:800;
-}
-
+.game-type{color:#b5a98f;font-size:10px;font-weight:800}
 .download-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:11px 13px;
-border:1px solid #f5b72e50;
-border-radius:10px;
-background:#f5b72e12;
-color:#ffda75;
-font-size:11px;
-font-weight:900;
+display:inline-flex;align-items:center;justify-content:center;
+padding:11px 13px;border:1px solid #f5b72e50;
+border-radius:10px;background:#f5b72e12;
+color:#ffda75;font-size:11px;font-weight:900;
 }
-
 .download-btn:hover{background:#f5b72e;color:#171006}
-
+.unavailable{
+display:inline-flex;align-items:center;justify-content:center;
+padding:10px 11px;border:1px solid #ffffff20;
+border-radius:10px;color:#aaa394;
+font-size:10px;font-weight:800;
+}
 .game-details{
 border-top:1px solid var(--line);
-margin-top:17px;
-padding-top:12px;
+margin-top:17px;padding-top:12px;
 }
-
 .game-details summary{
-color:var(--gold2);
-font-size:11px;
-font-weight:850;
-cursor:pointer;
-list-style:none;
+color:var(--gold2);font-size:11px;
+font-weight:850;cursor:pointer;list-style:none;
 }
-
 .game-details summary::-webkit-details-marker{display:none}
 .game-details summary:after{content:"＋";float:right}
 .game-details[open] summary:after{content:"−"}
-
 .game-details p{
-margin-top:11px;
-font-size:12px;
-line-height:1.85;
-color:#bdb4a3;
+margin-top:11px;font-size:12px;
+line-height:1.85;color:#bdb4a3;
 }
-
 .game-details h4{
-margin-top:12px;
-font-size:11px;
-color:#f4d58c;
+margin-top:12px;font-size:11px;color:#f4d58c;
 }
-
 .game-details ul{
-padding-left:18px;
-margin-top:7px;
-color:#bdb4a3;
-font-size:11px;
-line-height:1.9;
+padding-left:18px;margin-top:7px;
+color:#bdb4a3;font-size:11px;line-height:1.9;
 }
-
+.notice{
+margin-top:18px;padding:17px 19px;
+border:1px solid #f5b72e30;border-radius:14px;
+background:#f5b72e09;color:#c8bda6;
+font-size:12px;line-height:1.9;
+}
+.notice strong{color:#f4d58c}
 .empty-state{
-display:none;
-text-align:center;
-padding:45px 15px;
-border:1px dashed #f5b72e30;
-border-radius:18px;
-color:var(--muted);
-margin-top:20px;
+display:none;text-align:center;padding:45px 15px;
+border:1px dashed #f5b72e30;border-radius:18px;
+color:var(--muted);margin-top:20px;
 }
-
-.empty-state strong{
-display:block;
-color:white;
-margin-bottom:6px;
-}
+.empty-state strong{display:block;color:white;margin-bottom:6px}
 
 .content-panel{
-border:1px solid var(--line);
-border-radius:22px;
+border:1px solid var(--line);border-radius:22px;
 padding:clamp(22px,4vw,36px);
 background:linear-gradient(145deg,#1c1912,#11100d);
 }
-
 .content-panel h3{
-font-size:19px;
-margin:22px 0 9px;
-color:#f8e2ad;
+font-size:19px;margin:22px 0 9px;color:#f8e2ad;
 }
-
 .content-panel h3:first-child{margin-top:0}
-
 .content-panel p,.content-panel li{
-color:#bdb4a3;
-font-size:13px;
-line-height:1.95;
+color:#bdb4a3;font-size:13px;line-height:1.95;
 }
-
 .content-panel ul,.content-panel ol{
-padding-left:21px;
-margin:10px 0;
+padding-left:21px;margin:10px 0;
 }
-
 .content-panel a{
-color:var(--gold2);
-text-decoration:underline;
+color:var(--gold2);text-decoration:underline;
 text-underline-offset:3px;
 }
+.content-panel strong{color:#f1dfb6}
 
 .guide-grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:16px;
-margin-top:20px;
+display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+gap:16px;margin-top:20px;
 }
-
 .guide-card{
-border:1px solid var(--line);
-border-radius:17px;
-padding:22px;
-background:linear-gradient(145deg,#1c1912,#11100d);
+border:1px solid var(--line);border-radius:17px;
+padding:22px;background:linear-gradient(145deg,#1c1912,#11100d);
 }
-
 .guide-card .guide-icon{font-size:27px}
+.guide-card h3{font-size:16px;margin:12px 0 8px}
+.guide-card p{color:var(--muted);font-size:12px;line-height:1.9}
 
-.guide-card h3{
-font-size:16px;
-margin:12px 0 8px;
-}
-
-.guide-card p{
-color:var(--muted);
-font-size:12px;
-line-height:1.9;
-}
-
-.faq-item{
-border-bottom:1px solid var(--line);
-padding:17px 0;
-}
-
+.faq-item{border-bottom:1px solid var(--line);padding:17px 0}
 .faq-item:last-child{border-bottom:0}
-
 .faq-item summary{
-cursor:pointer;
-color:#f5dfaa;
-font-size:14px;
-font-weight:800;
+cursor:pointer;color:#f5dfaa;font-size:14px;font-weight:800;
 }
-
 .faq-item p{
-margin-top:10px;
-color:var(--muted);
-font-size:12px;
-line-height:1.9;
+margin-top:10px;color:var(--muted);
+font-size:12px;line-height:1.9;
 }
 
 .about{
-display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:25px;
+display:grid;grid-template-columns:1.15fr .85fr;gap:25px;
 }
-
 .about-main,.about-side{
-border:1px solid var(--line);
-border-radius:22px;
+border:1px solid var(--line);border-radius:22px;
 padding:clamp(23px,4vw,37px);
 background:linear-gradient(145deg,#1c1912,#11100d);
 }
-
 .about-main h2{
 font-size:clamp(27px,4vw,36px);
-line-height:1.2;
-margin:12px 0;
+line-height:1.2;margin:12px 0;
 }
-
 .about-main p,.about-side p{
-color:var(--muted);
-font-size:13px;
-line-height:1.9;
+color:var(--muted);font-size:13px;line-height:1.9;
 }
-
 .about-side{
-display:flex;
-flex-direction:column;
-justify-content:center;
+display:flex;flex-direction:column;justify-content:center;
 background:radial-gradient(ellipse at 100% 0%,#f5b72e20,transparent 55%),#14120e;
 }
-
-.about-mark{
-font-size:38px;
-margin-bottom:12px;
-color:var(--gold);
-}
-
+.about-mark{font-size:38px;margin-bottom:12px;color:var(--gold)}
 .about-side h3{margin-bottom:8px}
 
 footer{
-margin-top:75px;
-border-top:1px solid var(--line);
-background:#070707;
-padding:35px 4%;
-text-align:center;
+margin-top:75px;border-top:1px solid var(--line);
+background:#070707;padding:35px 4%;text-align:center;
 }
-
 .footer-brand{
-font-weight:950;
-font-size:19px;
-letter-spacing:1px;
-color:var(--gold2);
+font-weight:950;font-size:19px;letter-spacing:1px;color:var(--gold2);
 }
-
-footer p{
-color:#89816f;
-font-size:11px;
-margin-top:9px;
-line-height:1.8;
-}
-
+footer p{color:#89816f;font-size:11px;margin-top:9px;line-height:1.8}
 .footer-links{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:17px;
-margin-top:20px;
+display:flex;justify-content:center;flex-wrap:wrap;
+gap:17px;margin-top:20px;
 }
-
-.footer-links a{
-color:#d8c18c;
-font-size:11px;
-}
-
+.footer-links a{color:#d8c18c;font-size:11px}
 .footer-links a:hover{color:var(--gold)}
-
-.back-top{
-display:inline-block;
-margin-top:20px;
-color:#e8c777;
-font-size:12px;
-}
+.back-top{display:inline-block;margin-top:20px;color:#e8c777;font-size:12px}
 
 @media(max-width:900px){
 .games{grid-template-columns:repeat(2,minmax(0,1fr))}
 .about{grid-template-columns:1fr}
 .hero-card{min-height:380px}
 .floating-symbol{right:7%;opacity:.08}
+.collection-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-
 @media(max-width:650px){
-.navbar{
-width:94%;
-min-height:68px;
-}
+.navbar{width:94%;min-height:68px}
 .brand{font-size:13px;gap:8px}
 .brand-logo{width:37px;height:37px}
 .menu-link{display:none}
 .hero{margin-top:12px}
-.hero-card{
-min-height:415px;
-padding:27px 21px;
-border-radius:22px;
-}
+.hero-card{min-height:415px;padding:27px 21px;border-radius:22px}
 .hero h1{letter-spacing:-1.8px}
 .hero p{font-size:13px}
 .hero-card:before{right:-140px}
@@ -729,7 +503,6 @@ border-radius:22px;
 .search-key{display:none}
 .count{white-space:normal}
 }
-
 @media(prefers-reduced-motion:reduce){
 *,*:before,*:after{
 animation-duration:.01ms!important;
@@ -749,10 +522,10 @@ scroll-behavior:auto!important;
 <img class="brand-logo" src="fx-logo.png" alt="FOZAYX Games logo">
 <span class="brand-name">FOZAYX GAMES™</span>
 </a>
-
 <div class="nav-actions">
 <a class="menu-link" href="#games">GAMES</a>
 <a class="menu-link" href="#guides">GUIDES</a>
+<a class="menu-link" href="#editorial">OUR APPROACH</a>
 <a class="menu-link" href="#about">ABOUT</a>
 </div>
 </nav>
@@ -760,17 +533,14 @@ scroll-behavior:auto!important;
 <header class="hero">
 <div class="hero-card">
 <div class="hero-content">
-<span class="pill"><span class="live-dot"></span> YOUR NEXT ADVENTURE STARTS HERE</span>
-
-<h1>ENTER THE<br><span class="gradient">GAMING UNIVERSE.</span></h1>
-
+<span class="pill"><span class="live-dot"></span> THE FOZAYX DIGITAL COLLECTION</span>
+<h1>CREATE.<br><span class="gradient">EXPLORE. PLAY.</span></h1>
 <p>
-Welcome to FOZAYX Games, a digital destination for discovering mobile games and interactive experiences. Explore our collection, learn about each title, and find practical information before downloading.
+Welcome to FOZAYX Games, an independent digital project from The Afnan Yaz Productions. Explore original Android game projects, discover application projects, learn about our development approach and read practical guides to Android downloads and installation. We aim to make every listing clear about what it is, who created it and what information is available.
 </p>
-
 <div class="hero-buttons">
-<a class="primary-btn" href="#games">Explore Games ↗</a>
-<a class="secondary-btn" href="#guides">Read Game Guides ✦</a>
+<a class="primary-btn" href="#games">Explore Collection ↗</a>
+<a class="secondary-btn" href="#guides">Read Android Guides ✦</a>
 </div>
 </div>
 <div class="floating-symbol" aria-hidden="true">✦</div>
@@ -779,23 +549,22 @@ Welcome to FOZAYX Games, a digital destination for discovering mobile games and 
 
 <main>
 
-<!-- GAME COLLECTION -->
+<!-- COLLECTION -->
 <section class="section" id="games">
 <div class="section-top">
 <div>
 <div class="overline">THE DIGITAL PLAYGROUND</div>
 <h2>Explore Our Collection<span class="gradient">.</span></h2>
-<p>Read about each title, check its category and explore the download information.</p>
+<p>Browse original projects, third-party titles and applications by category.</p>
 </div>
-<div class="count" id="gameCount">09 GAMES · 01 AI MODEL · 01 MUSIC APP</div>
+<div class="count" id="gameCount">10 LISTINGS</div>
 </div>
 
 <label class="search-wrap">
 <span class="search-symbol" aria-hidden="true">⌕</span>
 <input id="gameSearch" type="search"
 placeholder="Search games, racing, action, music..."
-autocomplete="off"
-aria-label="Search the collection">
+autocomplete="off" aria-label="Search the collection">
 <span class="search-key">SEARCH</span>
 </label>
 
@@ -809,300 +578,357 @@ aria-label="Search the collection">
 <button class="filter" data-filter="music" type="button" aria-pressed="false">🎵 Music</button>
 </div>
 
+<div class="collection-summary" aria-label="Collection ownership summary">
+<div class="summary-item">
+<strong>06</strong>
+<span>ORIGINAL GAMES</span>
+</div>
+<div class="summary-item">
+<strong>02</strong>
+<span>THIRD-PARTY TITLES</span>
+</div>
+<div class="summary-item">
+<strong>01</strong>
+<span>AI PROJECT</span>
+</div>
+<div class="summary-item">
+<strong>01</strong>
+<span>MUSIC APPLICATION</span>
+</div>
+</div>
+
+<div class="notice">
+<strong>Collection transparency:</strong>
+FOZAYX Games includes six games developed as projects of The Afnan Yaz Productions, two third-party game listings, one AI-related project and one music application. Third-party titles are identified separately and are not presented as original FOZAYX creations. App icons and supplied artwork are visual identifiers, not gameplay screenshots. A download link is provided only where the project has a hosted file; third-party files should not be redistributed without the necessary rights or permission.
+</div>
+
 <div class="games" id="gamesGrid">
 
-<!-- BMX BOY -->
-<article class="game" data-name="bmx boy original bicycle bike cycling sports classic stunt jump" data-category="sports">
+<!-- BMX BOY: THIRD PARTY -->
+<article class="game" data-name="bmx boy original bicycle bike cycling sports classic stunt jump third party" data-category="sports" data-owner="thirdparty">
 <div class="game-art">
-<span class="game-tag">CLASSIC RIDE</span>
-<img
-src="https://play-lh.googleusercontent.com/ODG5LgylXE9dqrYk0psNoJr6aPZWdP-HwSgpe-vfLFzkSUffjqRyo79bQqmaxzbHiSaumODwwcTD3ldY6nSO=w240-h480"
-alt="BMX Boy app icon"
-referrerpolicy="no-referrer"
+<span class="game-tag">THIRD-PARTY TITLE</span>
+<img src="https://play-lh.googleusercontent.com/ODG5LgylXE9dqrYk0psNoJr6aPZWdP-HwSgpe-vfLFzkSUffjqRyo79bQqmaxzbHiSaumODwwcTD3ldY6nSO=w240-h480"
+alt="BMX Boy app icon" referrerpolicy="no-referrer"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">🚴</span>
+<span class="preview-label">APP ICON</span>
 </div>
 <div class="game-info">
 <h3>BMX Boy</h3>
-<p>A bicycle-themed arcade experience built around riding, jumping and obstacle challenges.</p>
+<p>BMX Boy is a third-party bicycle-themed mobile game. It is included as a separate discovery listing for visitors interested in cycling and arcade-style games.</p>
+<span class="ownership thirdparty">THIRD-PARTY · NOT OUR GAME</span>
 <div class="game-bottom">
-<span class="game-type">SPORTS · CLASSIC</span>
-<a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/BMXBoy_1.16.46_arm64.apk">DOWNLOAD ↗</a>
+<span class="game-type">SPORTS · BICYCLE</span>
+<span class="unavailable">OFFICIAL LINK NEEDED</span>
 </div>
 <details class="game-details">
 <summary>Read game information</summary>
-<p>BMX Boy is a side-scrolling bicycle game. The central idea is to ride through a course, avoid obstacles and use jumps to progress. Its simple arcade-style concept makes it suitable for short gaming sessions.</p>
-<h4>What to expect</h4>
-<ul>
-<li>Bicycle riding and jumping gameplay.</li>
-<li>Obstacle-focused arcade challenges.</li>
-<li>A simple control concept designed around movement and jumps.</li>
-</ul>
-<h4>Before downloading</h4>
-<p>Check that the APK is compatible with your Android device and that you have enough free storage. The download link points to the project's hosted APK file.</p>
+<p>This entry identifies BMX Boy as a third-party game rather than a title developed by The Afnan Yaz Productions. Its bicycle theme makes it relevant to visitors browsing sports and arcade-style mobile games.</p>
+<h4>Ownership and distribution</h4>
+<p>The original game's software, branding and artwork belong to their respective rights holders. FOZAYX Games does not claim ownership or official affiliation. This website does not provide a third-party APK download here because redistribution permission has not been established.</p>
+<h4>Where to obtain it</h4>
+<p>Look for the title through its original developer or an authorized app distribution platform. Check the publisher identity before installing.</p>
 </details>
 </div>
 </article>
 
-<!-- T REX -->
-<article class="game" data-name="t rex trex jungle run dinosaur running endless arcade runner" data-category="arcade">
+<!-- T REX: ORIGINAL -->
+<article class="game" data-name="t rex trex jungle run dinosaur running endless arcade runner original afnan yaz" data-category="arcade" data-owner="original">
 <div class="game-art">
-<span class="game-tag">ARCADE</span>
+<span class="game-tag">ORIGINAL PROJECT</span>
 <div class="art-emoji">🦖</div>
+<span class="preview-label">CATEGORY ART</span>
 </div>
 <div class="game-info">
 <h3>T-Rex Jungle Run</h3>
-<p>A dinosaur-themed running experience focused on timing, movement and avoiding obstacles.</p>
+<p>An original game project from The Afnan Yaz Productions, presented with a dinosaur and jungle-inspired identity.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">ARCADE · RUNNER</span>
+<span class="game-type">ARCADE · GAME PROJECT</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/app-debug%20%283%29.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>T-Rex Jungle Run is presented as an arcade runner. Runner-style games generally challenge players to react to obstacles and maintain movement for as long as possible. The dinosaur theme gives this title its visual identity.</p>
-<h4>Gameplay focus</h4>
+<summary>Read project information</summary>
+<p>T-Rex Jungle Run is one of the original game projects featured in the FOZAYX collection. Its name combines two recognizable ideas: a Tyrannosaurus rex and a jungle setting. The project is presented under the arcade category to help visitors find it alongside other casual game entries.</p>
+<p>The listing is intentionally limited to confirmed project information. It does not invent a level count, gameplay mechanics, scoring system, control scheme or performance results. Those details should be added only after they have been checked against the actual released build.</p>
+<h4>Project information</h4>
 <ul>
-<li>Quick reactions and timing.</li>
-<li>Jumping or avoiding obstacles where supported by the game.</li>
-<li>Short sessions suitable for casual play.</li>
+<li>Project name: T-Rex Jungle Run.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Arcade.</li>
+<li>Visual currently shown: a category illustration, not a gameplay screenshot.</li>
 </ul>
-<h4>Installation note</h4>
-<p>Use the download link to obtain the APK. Review Android's installation warning carefully and only continue if you trust the file source.</p>
+<h4>Download information</h4>
+<p>The download link points to an APK file in the project's GitHub repository. The filename alone does not confirm the current app version or Android compatibility. Check the file and your device requirements before installation.</p>
 </details>
 </div>
 </article>
 
-<!-- HIGHWAY RUSH -->
-<article class="game" data-name="highway rush 2d car racing traffic speed driving road" data-category="racing">
+<!-- HIGHWAY RUSH: ORIGINAL -->
+<article class="game" data-name="highway rush 2d car racing traffic speed driving road original" data-category="racing" data-owner="original">
 <div class="game-art">
-<span class="game-tag">HIGH SPEED</span>
+<span class="game-tag">ORIGINAL PROJECT</span>
 <div class="art-emoji">🏎️</div>
+<span class="preview-label">CATEGORY ART</span>
 </div>
 <div class="game-info">
 <h3>Highway Rush 2D</h3>
-<p>A 2D driving challenge where players navigate traffic and focus on avoiding collisions.</p>
+<p>An original 2D driving-themed game project from The Afnan Yaz Productions.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
 <span class="game-type">RACING · DRIVING</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/Highway-Rush-2D.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>Highway Rush 2D belongs to the traffic-driving arcade category. The main appeal of this type of game is managing movement around other vehicles while trying to stay on the road.</p>
-<h4>Gameplay focus</h4>
+<summary>Read project information</summary>
+<p>Highway Rush 2D is an original project in the FOZAYX collection. The title establishes its central theme: a two-dimensional highway and driving experience. It is categorized under racing so visitors can find it when browsing driving-related projects.</p>
+<p>Rather than publishing unverified claims about vehicle selection, track design, upgrades or game modes, this page focuses on the project's confirmed identity and category. More detailed information can be added when it has been checked against the actual game build.</p>
+<h4>Project information</h4>
 <ul>
-<li>2D road and traffic gameplay.</li>
-<li>Quick steering decisions and collision avoidance.</li>
-<li>A driving-focused arcade experience.</li>
+<li>Project name: Highway Rush 2D.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Racing and driving.</li>
+<li>Visual currently shown: a category illustration, not a gameplay screenshot.</li>
 </ul>
-<h4>Who may enjoy it?</h4>
-<p>Players who enjoy traffic-dodging challenges and quick driving sessions may find this type of game interesting.</p>
+<h4>Download information</h4>
+<p>The APK is hosted in the project's repository. Confirm that the download completes and that your Android device meets the application's requirements before installing.</p>
 </details>
 </div>
 </article>
 
-<!-- BMX BOY 3D -->
-<article class="game" data-name="bmx boy 3d bicycle bike stunt cycling sports" data-category="sports">
+<!-- BMX BOY 3D: ORIGINAL -->
+<article class="game" data-name="bmx boy 3d bicycle bike stunt cycling sports original" data-category="sports" data-owner="original">
 <div class="game-art">
-<span class="game-tag">3D EXPERIENCE</span>
-<img
-src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/bmx-boy-3d-logo.png"
-alt="BMX Boy 3D artwork"
+<span class="game-tag">ORIGINAL PROJECT</span>
+<img src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/bmx-boy-3d-logo.png"
+alt="BMX Boy 3D project artwork"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">🚵</span>
+<span class="preview-label">PROJECT ARTWORK</span>
 </div>
 <div class="game-info">
 <h3>BMX Boy 3D</h3>
-<p>A 3D bicycle-themed experience for players interested in cycling and stunt-style gameplay.</p>
+<p>An original bicycle-themed 3D game project developed under The Afnan Yaz Productions.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">SPORTS · 3D</span>
+<span class="game-type">SPORTS · 3D PROJECT</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/bmx_boy_3d.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>BMX Boy 3D is listed separately from the classic BMX Boy title. Its 3D presentation is the key distinction indicated by its name. Players interested in bicycle-themed games can explore this version as another option.</p>
-<h4>Things to check</h4>
+<summary>Read project information</summary>
+<p>BMX Boy 3D is a separate original project in the FOZAYX collection. It is distinct from the third-party BMX Boy listing. Its name identifies a bicycle-themed project with a 3D identity.</p>
+<p>Keeping these two entries separate is important: the original project is associated with The Afnan Yaz Productions, while BMX Boy is a third-party title. The shared bicycle theme does not mean that the two projects have the same developer or software.</p>
+<h4>Project information</h4>
 <ul>
-<li>Confirm the device supports the APK architecture.</li>
-<li>Check available storage before installation.</li>
-<li>Review the game's performance on your device.</li>
+<li>Project name: BMX Boy 3D.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Sports and 3D game project.</li>
+<li>Artwork: supplied project artwork, not a gameplay screenshot.</li>
 </ul>
-<p>Specific level counts, device requirements and performance figures are not listed here because they have not been independently verified.</p>
+<h4>Installation information</h4>
+<p>Check the APK source, Android compatibility and available storage before installing. A different signing certificate can prevent an APK from updating an existing installation.</p>
 </details>
 </div>
 </article>
 
-<!-- SPIDER MAN -->
-<article class="game" data-name="spider man spiderman ultimate power superhero action adventure" data-category="action">
+<!-- SPIDER MAN: THIRD PARTY -->
+<article class="game" data-name="spider man spiderman ultimate power superhero action adventure third party" data-category="action" data-owner="thirdparty">
 <div class="game-art">
-<span class="game-tag">ACTION</span>
-<img src="hq720.jpg"
-alt="Spider-Man Ultimate Power game artwork"
+<span class="game-tag">THIRD-PARTY TITLE</span>
+<img src="hq720.jpg" alt="Spider-Man Ultimate Power listing artwork"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">🕷️</span>
+<span class="preview-label">LISTING ARTWORK</span>
 </div>
 <div class="game-info">
 <h3>Spider-Man Ultimate Power</h3>
-<p>A superhero-themed action adventure for players looking for a character-driven experience.</p>
+<p>A third-party superhero-themed title listed separately from original FOZAYX projects.</p>
+<span class="ownership thirdparty">THIRD-PARTY · NOT OUR GAME</span>
 <div class="game-bottom">
-<span class="game-type">ACTION · ADVENTURE</span>
-<a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/Spider-Man-UltimatePower-ARM64.apk">DOWNLOAD ↗</a>
+<span class="game-type">ACTION · THIRD-PARTY</span>
+<span class="unavailable">OFFICIAL LINK NEEDED</span>
 </div>
 <details class="game-details">
 <summary>Read game information</summary>
-<p>Spider-Man Ultimate Power is listed in the action category. The superhero theme is its main attraction for visitors browsing character-based action games.</p>
-<h4>What to consider</h4>
-<ul>
-<li>Check the APK architecture and Android compatibility.</li>
-<li>Make sure the device has sufficient storage.</li>
-<li>Review the installation source before proceeding.</li>
-</ul>
-<p>FOZAYX Games is an independent game-discovery website. Listing a title does not mean the site owns or officially represents its original intellectual property.</p>
+<p>Spider-Man Ultimate Power is a third-party title associated with a copyrighted character. The Spider-Man name, character and related intellectual property belong to their respective rights holders. This entry is not an original FOZAYX game.</p>
+<h4>Copyright and distribution</h4>
+<p>FOZAYX Games does not claim ownership of the character, title, software or associated artwork. The website does not provide a hosted APK for this entry because authorization to redistribute the game has not been established.</p>
+<p>Visitors should use an authorized distribution source where available. Any future download link should be added only after the relevant distribution rights have been confirmed.</p>
+<h4>Important notice</h4>
+<p>This listing does not imply endorsement, sponsorship or official affiliation with the character's rights holders.</p>
 </details>
 </div>
 </article>
 
-<!-- SKATER BOY -->
-<article class="game" data-name="skater boy skateboard skating sports arcade obstacles" data-category="arcade">
+<!-- SKATER BOY: ORIGINAL -->
+<article class="game" data-name="skater boy skateboard skating sports arcade obstacles original" data-category="arcade" data-owner="original">
 <div class="game-art">
-<span class="game-tag">SKATE TIME</span>
+<span class="game-tag">ORIGINAL PROJECT</span>
 <div class="art-emoji">🛹</div>
+<span class="preview-label">CATEGORY ART</span>
 </div>
 <div class="game-info">
 <h3>Skater Boy</h3>
-<p>A skateboarding arcade title built around movement, timing and navigating obstacles.</p>
+<p>An original skateboarding-themed game project associated with The Afnan Yaz Productions.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">ARCADE · SPORTS</span>
+<span class="game-type">ARCADE · SKATEBOARD</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/skater-boy-1-18-50-arm64-fixed.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>Skater Boy is a skateboarding-themed arcade game. Skateboarding games commonly focus on controlling movement and timing jumps to get past obstacles.</p>
-<h4>Gameplay category</h4>
+<summary>Read project information</summary>
+<p>Skater Boy is included in the original FOZAYX project collection as a skateboarding-themed game. Its name provides a clear subject for the listing, and its arcade category helps visitors find it alongside other casual game projects.</p>
+<p>This page does not claim a verified number of stages, tricks, characters or obstacles. Such details should be documented from the actual build rather than inferred from the title or artwork.</p>
+<h4>Project information</h4>
 <ul>
-<li>Skateboarding theme.</li>
-<li>Arcade-style movement and obstacle challenges.</li>
-<li>Sports-inspired casual gameplay.</li>
+<li>Project name: Skater Boy.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Arcade and skateboarding.</li>
+<li>Visual currently shown: a category illustration, not a gameplay screenshot.</li>
 </ul>
-<p>Check the downloaded file and device compatibility before installing.</p>
+<h4>Installation note</h4>
+<p>Check that the APK is complete and intended for your device. If Android reports a package or signature conflict, consult the developer before removing an existing installation.</p>
 </details>
 </div>
 </article>
 
-<!-- VOLTWING -->
-<article class="game" data-name="voltwing rooftops rooftop lightning action adventure" data-category="action">
+<!-- VOLTWING: ORIGINAL -->
+<article class="game" data-name="voltwing rooftops rooftop lightning action adventure original" data-category="action" data-owner="original">
 <div class="game-art">
-<span class="game-tag">ROOFTOP ACTION</span>
-<img
-src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/voltwing-icon.png"
-alt="Voltwing Rooftops artwork"
+<span class="game-tag">ORIGINAL PROJECT</span>
+<img src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/voltwing-icon.png"
+alt="Voltwing Rooftops app icon"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">⚡</span>
+<span class="preview-label">APP ICON</span>
 </div>
 <div class="game-info">
 <h3>Voltwing Rooftops</h3>
-<p>An action-adventure project with a rooftop theme and lightning-inspired identity.</p>
+<p>An original action-category game project with a rooftop-inspired name and visual identity.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">ACTION · ADVENTURE</span>
+<span class="game-type">ACTION · GAME PROJECT</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/voltwing_rooftops.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>Voltwing Rooftops is presented as an action-adventure title. Its name and visual identity suggest a rooftop-focused setting. This page provides the basic listing information without inventing unverified story, level or feature details.</p>
-<h4>Before installing</h4>
+<summary>Read project information</summary>
+<p>Voltwing Rooftops is an original project associated with The Afnan Yaz Productions. Its name and supplied icon establish its visual identity within the FOZAYX collection. The entry is organized under action projects.</p>
+<p>A useful project page should distinguish confirmed information from assumptions. For that reason, this listing does not invent a storyline, character abilities, mission count, control scheme or performance benchmark.</p>
+<h4>Project information</h4>
 <ul>
-<li>Check whether the APK supports your Android device.</li>
-<li>Keep enough free storage available.</li>
-<li>Only install files from sources you trust.</li>
+<li>Project name: Voltwing Rooftops.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Action.</li>
+<li>Visual: supplied app icon.</li>
 </ul>
+<h4>Download information</h4>
+<p>The APK link points to the project repository. Check the file source and device compatibility before installation. Verified version information and genuine gameplay screenshots can make this listing more informative when available.</p>
 </details>
 </div>
 </article>
 
-<!-- SKYFORGE -->
-<article class="game" data-name="skyforge vanguard futuristic action adventure" data-category="action">
+<!-- SKYFORGE: ORIGINAL -->
+<article class="game" data-name="skyforge vanguard futuristic action adventure original" data-category="action" data-owner="original">
 <div class="game-art">
-<span class="game-tag">FUTURE ACTION</span>
-<img
-src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/skyforge-icon.png"
-alt="Skyforge Vanguard artwork"
+<span class="game-tag">ORIGINAL PROJECT</span>
+<img src="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/skyforge-icon.png"
+alt="Skyforge Vanguard app icon"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">🛡️</span>
+<span class="preview-label">APP ICON</span>
 </div>
 <div class="game-info">
 <h3>Skyforge Vanguard</h3>
-<p>A futuristic action-adventure project for visitors interested in science-fiction themes.</p>
+<p>An original action project with a futuristic identity, developed under The Afnan Yaz Productions.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">ACTION · ADVENTURE</span>
+<span class="game-type">ACTION · GAME PROJECT</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/skyforge_vanguard.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
-<summary>Read game information</summary>
-<p>Skyforge Vanguard is listed as a futuristic action-adventure experience. Its science-fiction identity gives it a different theme from the bicycle, skating and driving titles in this collection.</p>
-<h4>Download checklist</h4>
+<summary>Read project information</summary>
+<p>Skyforge Vanguard is an original project in the FOZAYX collection. The title gives the project a futuristic identity, and the supplied icon is used to distinguish its listing from the other projects on the website.</p>
+<p>The listing is not presented as an independent review or technical test. Gameplay details, device compatibility, supported Android versions and performance information should be published only after they have been verified against the actual application.</p>
+<h4>Project information</h4>
 <ul>
-<li>Confirm that the file is intended for Android.</li>
-<li>Check the supported processor architecture.</li>
-<li>Review Android's installation warning.</li>
+<li>Project name: Skyforge Vanguard.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Collection category: Action.</li>
+<li>Visual: supplied app icon.</li>
 </ul>
-<p>Detailed system requirements should be added after testing the game on supported devices.</p>
+<h4>Before installation</h4>
+<p>Check the APK source, available storage and Android compatibility. Review Android's security messages and the application's requested permissions.</p>
 </details>
 </div>
 </article>
 
-<!-- ARENA -->
-<article class="game" data-name="arena arena 1.0.1 ai artificial intelligence model" data-category="ai">
+<!-- ARENA: ORIGINAL AI PROJECT -->
+<article class="game" data-name="arena arena 1.0.1 ai artificial intelligence model web to app original" data-category="ai" data-owner="original">
 <div class="game-art">
-<span class="game-tag">AI PROJECT</span>
+<span class="game-tag">ORIGINAL AI PROJECT</span>
 <div class="art-emoji">🤖</div>
+<span class="preview-label">PROJECT SYMBOL</span>
 </div>
 <div class="game-info">
 <h3>Arena 1.0.1</h3>
-<p>An AI-related project listed in the FOZAYX digital collection.</p>
+<p>An AI-related Web-to-App project created under The Afnan Yaz Productions.</p>
+<span class="ownership original">ORIGINAL · THE AFNAN YAZ PRODUCTIONS</span>
 <div class="game-bottom">
-<span class="game-type">AI · PROJECT</span>
+<span class="game-type">AI · DIGITAL PROJECT</span>
 <a class="download-btn" href="https://raw.githubusercontent.com/Fozayelafnan/theafnanyazproductions.github.io/main/Arena%201.0.1.apk">DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
 <summary>Read project information</summary>
-<p>Arena 1.0.1 is listed separately from the games because it is presented as an AI-related project. Visitors should review the app's own information and permissions before using it.</p>
-<h4>Responsible use</h4>
+<p>Arena 1.0.1 is an AI-related digital project associated with The Afnan Yaz Productions. It is described as a Web-to-App project and is listed separately from the game collection because its purpose and category are different.</p>
+<p>The version label shown in the project name is part of the supplied listing information. This page does not claim that Arena uses a particular AI model, training dataset, benchmark, accuracy score or proprietary technology unless those details are documented and verified.</p>
+<h4>Project information</h4>
 <ul>
-<li>Review the permissions requested by the application.</li>
-<li>Avoid entering passwords or sensitive personal information into unknown applications.</li>
-<li>Check the source and compatibility before installation.</li>
+<li>Project name: Arena 1.0.1.</li>
+<li>Project type: AI-related Web-to-App project.</li>
+<li>Project ownership: The Afnan Yaz Productions.</li>
+<li>Visual currently shown: a category symbol, not an application screenshot.</li>
 </ul>
-<p>This listing does not make claims about model accuracy, capabilities or independent testing.</p>
+<h4>Responsible use</h4>
+<p>Review the application's permissions and privacy information before using it. Do not submit passwords, banking details or sensitive personal information to an unfamiliar application. AI-generated information should be checked against reliable sources before important decisions.</p>
 </details>
 </div>
 </article>
 
-<!-- AURA -->
-<article class="game" data-name="aura music player music streaming audio android entertainment" data-category="music">
+<!-- AURA MUSIC PLAYER -->
+<article class="game" data-name="aura music player music streaming audio android entertainment echo nightly" data-category="music" data-owner="original">
 <div class="game-art">
-<span class="game-tag">MUSIC PLAYER</span>
-<img
-src="ic_launcher-playstore.png"
-alt="AURA Music Player logo"
+<span class="game-tag">MUSIC APPLICATION</span>
+<img src="ic_launcher-playstore.png" alt="AURA Music Player app icon"
 onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
 <span class="art-emoji" style="display:none">🎵</span>
+<span class="preview-label">APP ICON</span>
 </div>
 <div class="game-info">
 <h3>AURA Music Player</h3>
-<p>Music Beyond Boundaries. Discover the AURA Android music player project.</p>
+<p>Music Beyond Boundaries. An Android music-player project associated with The Afnan Yaz Productions.</p>
+<span class="ownership reference">ORIGINAL APP · THIRD-PARTY ARCHITECTURE REFERENCE</span>
 <div class="game-bottom">
-<span class="game-type">MUSIC · ENTERTAINMENT</span>
+<span class="game-type">MUSIC · ANDROID APP</span>
 <a class="download-btn" href="aura.apk" download>DOWNLOAD ↗</a>
 </div>
 <details class="game-details">
 <summary>Read app information</summary>
-<p>AURA Music Player is an Android music application project associated with The Afnan Yaz Productions. It is presented here as a music app rather than a game.</p>
-<h4>Before installing</h4>
+<p>AURA Music Player is an Android application project associated with The Afnan Yaz Productions. Its identity is built around the tagline <strong>Music Beyond Boundaries.</strong> It is included in this collection as a music application rather than a game.</p>
+<p>The project uses the Echo Nightly project as an architectural and structural reference. Echo Nightly is an independently developed open-source Android music player. AURA should not be represented as having created Echo Nightly's original code, branding or work.</p>
+<h4>Open-source attribution</h4>
+<p>Reference project: <a href="https://github.com/itsmechinmoy/echo-nightly" target="_blank" rel="noopener noreferrer">Echo Nightly on GitHub ↗</a>.</p>
+<p>If source code from Echo Nightly or another open-source project is incorporated into AURA, the applicable license terms, copyright notices, attribution and source-distribution obligations must be followed. The exact obligations depend on the code and license used. Users should be able to find the required notices and corresponding source where the license requires it.</p>
+<h4>App information</h4>
 <ul>
-<li>Check the Android version and device compatibility.</li>
-<li>Review requested media and audio permissions.</li>
-<li>Use the app's settings to manage available playback options.</li>
+<li>Application name: AURA Music Player.</li>
+<li>Developer identity: The Afnan Yaz Productions.</li>
+<li>Platform: Android.</li>
+<li>Tagline: Music Beyond Boundaries.</li>
+<li>Visual: AURA application icon.</li>
 </ul>
-<p>Music Beyond Boundaries.</p>
+<h4>Before installing</h4>
+<p>Check the Android version supported by the particular build, review requested audio and media permissions, and install only a build obtained from a trusted release source.</p>
 </details>
 </div>
 </article>
@@ -1113,115 +939,239 @@ onerror="this.style.display='none';this.nextElementSibling.style.display='block'
 <strong>No results found ✦</strong>
 Try another search term or choose a different category.
 </div>
+
+<div class="notice">
+<strong>Important:</strong> The collection is a project directory, not a claim that every listed application has been independently security-tested or reviewed. Original project ownership, third-party rights and open-source attributions are disclosed separately. Please contact us if you find an inaccurate description or a rights-related issue.
+</div>
 </section>
 
-<!-- HOW TO DOWNLOAD -->
+<!-- ANDROID GUIDE -->
 <section class="section" id="guides">
 <div class="section-top">
 <div>
-<div class="overline">HELPFUL INFORMATION</div>
-<h2>Android Download & Installation Guide<span class="gradient">.</span></h2>
-<p>A practical checklist for visitors downloading Android APK files.</p>
+<div class="overline">PRACTICAL ANDROID INFORMATION</div>
+<h2>Android APK Download & Installation Guide<span class="gradient">.</span></h2>
+<p>A practical reference to APK files, installation, compatibility and common Android errors.</p>
 </div>
 </div>
 
 <div class="content-panel">
-<h3>What is an APK file?</h3>
+<h3>1. What is an APK file?</h3>
 <p>
-APK stands for Android Package Kit. It is the package format used to distribute and install Android applications. An APK downloaded from a website is installed outside the usual app-store installation flow, so it is important to check the source before installing it.
+APK stands for Android Package Kit. It is the package format used by Android to distribute and install applications. An APK contains application components and information Android needs to process an installation. Downloading an APK from a website is different from installing an app through a recognized app store. The source, package integrity and developer identity therefore matter.
+</p>
+<p>
+An APK filename is not proof of authenticity. A file called "official.apk" is not necessarily official, and a version number in a filename may not match the actual version inside the package. When possible, compare the file with information published by the original developer.
 </p>
 
-<h3>How to install an APK on Android</h3>
+<h3>2. How to evaluate an APK source</h3>
+<p>
+Before downloading an Android application, identify who developed it and where the file is hosted. An official developer website or recognized app store is generally a better starting point than an unfamiliar file-sharing page. If a download page does not identify its publisher or explain where the file came from, treat that uncertainty seriously.
+</p>
+<ul>
+<li>Check the developer or publisher name.</li>
+<li>Look for an official website or recognized store listing.</li>
+<li>Check whether the person hosting the file has permission to distribute it.</li>
+<li>Compare the application name and version with the developer's information.</li>
+<li>Review the Android requirements before downloading.</li>
+<li>Avoid modified packages from unknown sources.</li>
+</ul>
+
+<h3>3. How to install an APK</h3>
 <ol>
-<li>Open the download link for the application you want.</li>
-<li>Wait for the file to finish downloading.</li>
-<li>Open your device's Downloads folder or download notification.</li>
-<li>Tap the APK file to begin installation.</li>
-<li>If Android asks for permission, review the warning and allow installation only for a source you trust.</li>
-<li>Follow the installation prompts. Open the app after installation finishes.</li>
+<li>Open the download page for the application you intend to install.</li>
+<li>Confirm that you trust the publisher and the source of the file.</li>
+<li>Wait for the download to finish completely.</li>
+<li>Open your device's Downloads folder or the download notification.</li>
+<li>Tap the APK file to begin Android's installation process.</li>
+<li>If Android asks for permission to install from that source, read the warning and decide whether you trust it.</li>
+<li>Review the application's installation details and requested permissions.</li>
+<li>Continue only if the application and source are acceptable to you.</li>
+</ol>
+<p>
+The names and locations of Android settings can differ between manufacturers and Android versions. If you are unsure about a security warning, stop and consult your device manufacturer's support information.
+</p>
+
+<h3>4. Why an APK may not install</h3>
+<p>
+An installation failure can have several causes. It does not automatically mean that the phone is damaged. Android applications are built for particular platform requirements, and a package may not match the device or an existing installation.
+</p>
+<ul>
+<li><strong>Architecture mismatch:</strong> Some APK builds support specific processor architectures. A package may not support every Android device.</li>
+<li><strong>Android version:</strong> An application may require a newer Android release than the one installed on the phone.</li>
+<li><strong>Insufficient storage:</strong> The device may not have enough free space to complete installation.</li>
+<li><strong>Signature conflict:</strong> An existing application with the same package name but a different signing certificate may block an update.</li>
+<li><strong>Incomplete download:</strong> A connection problem may leave the package incomplete or corrupted.</li>
+<li><strong>Package format:</strong> Some applications are distributed as app bundles or split APK packages rather than one standalone APK.</li>
+<li><strong>Device restrictions:</strong> Android settings, manufacturer restrictions or security controls may affect installation.</li>
+</ul>
+
+<h3>5. Troubleshooting an installation error</h3>
+<ol>
+<li>Check available storage in Android settings.</li>
+<li>Confirm that the download completed and that the file came from a trusted source.</li>
+<li>Check the developer's Android version and processor requirements.</li>
+<li>Confirm whether the file is a standalone APK or part of a split-package distribution.</li>
+<li>If an older version is already installed, check whether the new package is signed by the same developer.</li>
+<li>Do not uninstall an existing app if doing so could remove important data that has not been backed up.</li>
+<li>If the error continues, contact the original application developer or use an official distribution channel.</li>
 </ol>
 
-<h3>Why might an APK fail to install?</h3>
+<h3>6. Understanding Android app permissions</h3>
+<p>
+Android permissions control an application's access to certain device features and information. Depending on the application, permission requests may relate to notifications, camera, microphone, contacts, location, photos, media or files. A permission request should have a reasonable connection to the application's purpose.
+</p>
+<p>
+For example, an application that records audio may need microphone access. A basic offline calculator would not normally need access to a microphone or contacts to perform calculations. This does not mean every unexpected permission request proves malicious activity, but it is a reason to investigate before granting access.
+</p>
+
+<h3>7. APK security practices</h3>
 <ul>
-<li><strong>Architecture mismatch:</strong> The APK may not support your device's processor architecture.</li>
-<li><strong>Android version:</strong> The app may require a newer Android version.</li>
-<li><strong>Insufficient storage:</strong> Your device may not have enough free space.</li>
-<li><strong>Conflicting installation:</strong> Another version with a different signature may already be installed.</li>
-<li><strong>Damaged download:</strong> The file may not have downloaded completely.</li>
+<li>Prefer the original developer's website or a recognized app store.</li>
+<li>Do not ignore serious warnings from Android or your device's security software.</li>
+<li>Keep Android and available security services updated.</li>
+<li>Do not install modified or repackaged apps from unknown sources.</li>
+<li>Review permissions before and after installation.</li>
+<li>Do not enter passwords or financial information into applications you do not trust.</li>
+<li>Delete incomplete or unwanted APK files.</li>
+<li>Keep backups of important application data where possible.</li>
 </ul>
 
-<h3>Basic security checklist</h3>
-<ul>
-<li>Download applications only from sources you trust.</li>
-<li>Check the app name and file before installing.</li>
-<li>Review the permissions requested by an application.</li>
-<li>Keep Android and Google Play Protect up to date.</li>
-<li>Do not install an APK if Android or your security software identifies a serious risk.</li>
-<li>Never share passwords, payment details or private information with an app you do not trust.</li>
-</ul>
+<h3>8. What is the difference between an APK and an app store installation?</h3>
+<p>
+An app store can provide a publisher page, application details, update information and distribution controls. A standalone APK download may not provide the same level of context. Depending on the distribution method, an APK may also need additional split packages or a particular installation process. This is why checking the developer and package format is important before downloading.
+</p>
+
+<h3>9. What FOZAYX Games verifies</h3>
+<p>
+FOZAYX Games publishes project names, categories, ownership descriptions and available download destinations. A listing does not automatically mean that the file has passed an independent security audit, that every device is compatible or that every feature has been tested. We avoid publishing technical specifications that have not been confirmed. Visitors should check the original developer's information when making installation decisions.
+</p>
 </div>
 
 <div class="guide-grid">
 <div class="guide-card">
 <div class="guide-icon">📱</div>
 <h3>Check Device Compatibility</h3>
-<p>Before downloading, check your Android version, processor architecture and available storage. An APK may not work on every Android device.</p>
+<p>Android version, processor architecture, device configuration and available storage can affect installation. Compare the device requirements with information from the application's developer before installing.</p>
 </div>
-
 <div class="guide-card">
 <div class="guide-icon">🔐</div>
-<h3>Understand App Permissions</h3>
-<p>Permissions determine what an app can access. Review them carefully and be cautious when an app requests access unrelated to its purpose.</p>
+<h3>Review App Permissions</h3>
+<p>Read the permissions requested by an application. Consider whether each permission makes sense for its purpose, and avoid granting access without a clear reason.</p>
 </div>
-
 <div class="guide-card">
 <div class="guide-icon">📦</div>
-<h3>Keep Your Downloads Organized</h3>
-<p>Use your Downloads folder to identify APK files. Remove incomplete or unwanted downloads to keep your device storage organized.</p>
+<h3>Manage Downloaded Files</h3>
+<p>Keep track of APK sources and remove incomplete or unwanted downloads. Avoid installing multiple unknown copies of the same application.</p>
 </div>
-
 <div class="guide-card">
 <div class="guide-icon">🛠️</div>
-<h3>Troubleshoot Installation</h3>
-<p>If installation fails, check storage, Android compatibility and whether another version of the same application is already installed.</p>
+<h3>Understand Installation Errors</h3>
+<p>When an installation fails, check storage, Android requirements, package format and signing conflicts. If the cause remains unclear, consult the original developer.</p>
 </div>
 </div>
 </section>
 
-<!-- EDITORIAL INFORMATION -->
-<section class="section" id="editorial">
+<!-- DEVELOPMENT APPROACH -->
+<section class="section" id="development">
 <div class="section-top">
 <div>
-<div class="overline">OUR APPROACH</div>
-<h2>How We Present Our Collection<span class="gradient">.</span></h2>
-<p>Information about listings, descriptions and updates.</p>
+<div class="overline">HOW WE BUILD</div>
+<h2>Our Project Development Approach<span class="gradient">.</span></h2>
+<p>The principles used to organize and present FOZAYX digital projects.</p>
 </div>
 </div>
 
 <div class="content-panel">
-<h3>Our purpose</h3>
+<h3>Project identity comes first</h3>
 <p>
-FOZAYX Games is a small digital gaming and app-discovery website. Its purpose is to organize a collection of mobile game and app listings and provide visitors with useful introductory information before they choose to explore a download.
+Every project should have a clear name, purpose and identity. We use separate entries for projects with different names and categories so visitors can understand what they are browsing. For example, BMX Boy 3D is identified as an original project, while BMX Boy is identified as a third-party title. Similar names do not imply shared ownership.
 </p>
 
-<h3>How listings are organized</h3>
+<h3>Original work and external references</h3>
 <p>
-We group entries by their general category, such as racing, action, sports, arcade, AI projects and music applications. Each listing includes a short introduction and a link to its associated download location when available.
+Our original projects are associated with The Afnan Yaz Productions. Some projects may use external tools, libraries, frameworks or open-source references. When third-party software or source code is used, its license and attribution requirements must be respected. A project should not claim authorship of code, artwork or other material created by someone else.
 </p>
 
-<h3>Accuracy and limitations</h3>
+<h3>Accurate project descriptions</h3>
 <p>
-Game descriptions on this website are introductory summaries. They should not be treated as independent technical testing, performance benchmarks or guarantees. Device compatibility, file availability and application features may change. We do not publish player ratings, download counts or performance claims unless they can be properly verified.
+A project page should tell visitors what is known without making unsupported promises. A title or app icon may communicate a theme, but it cannot prove a particular gameplay feature, performance level, compatibility result or technical specification. We prefer a shorter accurate description to a longer description filled with guesses.
 </p>
 
-<h3>Updates and corrections</h3>
+<h3>Visual presentation</h3>
 <p>
-We aim to review the information presented on the website and correct inaccurate or outdated details when they are identified. If you find a broken download link, incorrect description or other issue, please report it through our project feedback page.
+App icons, logos and gameplay screenshots serve different purposes. An app icon identifies an application. A logo identifies a project or brand. A gameplay screenshot shows an actual moment from the application. We label the current visual material according to what it represents and do not describe icons or category illustrations as gameplay captures.
+</p>
+
+<h3>Testing and technical information</h3>
+<p>
+Technical information such as app version, minimum Android version, supported processor architecture, file size and device testing results should be added only after verification. A filename is not a reliable substitute for checking the actual application package. Where a detail has not been confirmed, it should remain unspecified.
+</p>
+
+<h3>Corrections and improvements</h3>
+<p>
+Project information can change as applications are updated. We welcome reports about broken links, inaccurate ownership information, incorrect descriptions and visual problems. Reports help us identify which listing needs attention and what information should be corrected.
+</p>
+</div>
+</section>
+
+<!-- EDITORIAL POLICY -->
+<section class="section" id="editorial">
+<div class="section-top">
+<div>
+<div class="overline">CONTENT & TRANSPARENCY</div>
+<h2>Our Editorial Policy<span class="gradient">.</span></h2>
+<p>How FOZAYX Games creates, organizes and corrects website information.</p>
+</div>
+</div>
+
+<div class="content-panel">
+<h3>Purpose of this website</h3>
+<p>
+FOZAYX Games is an independent digital project under The Afnan Yaz Productions. The website presents original game projects, application projects, selected third-party title information and educational Android guides. It is intended to help visitors understand the collection rather than simply display a series of download links.
+</p>
+
+<h3>Original website content</h3>
+<p>
+The website's project descriptions, collection organization, explanatory articles and Android installation guides are prepared for this website. Our aim is to provide information that is relevant to the listed projects and useful to visitors. We avoid copying generic promotional descriptions and do not present unverified claims as facts.
+</p>
+
+<h3>Project ownership labels</h3>
+<p>
+The collection distinguishes original projects from third-party titles. T-Rex Jungle Run, Highway Rush 2D, BMX Boy 3D, Skater Boy, Voltwing Rooftops and Skyforge Vanguard are presented as original projects associated with The Afnan Yaz Productions. BMX Boy and Spider-Man Ultimate Power are identified as third-party titles. Arena 1.0.1 is presented as an AI-related Web-to-App project, while AURA Music Player is presented as an Android music application with an open-source architectural reference.
+</p>
+
+<h3>Third-party titles</h3>
+<p>
+Third-party names, characters, software and artwork remain the property of their respective rights holders. Their appearance in a collection listing does not mean that FOZAYX Games owns, develops, publishes or is officially affiliated with them. Third-party APK files should only be hosted or redistributed when the necessary rights or authorization exist.
+</p>
+
+<h3>Open-source software and attribution</h3>
+<p>
+Some software projects use external libraries, frameworks or open-source projects as references or dependencies. AURA Music Player uses Echo Nightly as an architectural and structural reference. If code from an open-source project is incorporated, the applicable license must be reviewed and followed. Required notices, attribution and corresponding source-code availability must be provided when the relevant license requires them.
+</p>
+<p>
+Reference project: <a href="https://github.com/itsmechinmoy/echo-nightly" target="_blank" rel="noopener noreferrer">Echo Nightly GitHub repository ↗</a>.
+</p>
+
+<h3>Images and screenshots</h3>
+<p>
+Some current entries use app icons, project artwork or category illustrations. These images are not necessarily screenshots of the actual application. We identify them accordingly. Genuine screenshots should be captured from the real application and labeled as screenshots only when they accurately represent the displayed build.
+</p>
+
+<h3>How project information is reviewed</h3>
+<p>
+Before adding a detail to a listing, we consider whether it is supported by the project itself or a reliable source. Project names, ownership descriptions and available repository links are used to identify entries. Details such as supported devices, app permissions, version numbers and gameplay features should be confirmed before publication.
+</p>
+
+<h3>Corrections and removal requests</h3>
+<p>
+We welcome reports about inaccurate information, broken downloads, incorrect ownership labels and copyright concerns. A useful report identifies the affected page or file and explains the issue. Where possible, provide a reliable source or evidence that helps us review the request.
 </p>
 
 <h3>Independent website</h3>
 <p>
-FOZAYX Games is not automatically affiliated with the original developers, publishers or trademark owners of third-party titles listed on this website. Product names and trademarks belong to their respective owners.
+FOZAYX Games is an independent website. Unless a specific relationship is clearly stated, it is not affiliated with or endorsed by third-party developers, publishers or trademark owners.
 </p>
 </div>
 </section>
@@ -1232,7 +1182,7 @@ FOZAYX Games is not automatically affiliated with the original developers, publi
 <div>
 <div class="overline">QUICK ANSWERS</div>
 <h2>Frequently Asked Questions<span class="gradient">.</span></h2>
-<p>Common questions about browsing and downloading from this website.</p>
+<p>Answers about our projects, ownership, downloads and website information.</p>
 </div>
 </div>
 
@@ -1240,42 +1190,62 @@ FOZAYX Games is not automatically affiliated with the original developers, publi
 
 <details class="faq-item">
 <summary>What is FOZAYX Games?</summary>
-<p>FOZAYX Games is a website that presents a collection of mobile game and app listings, introductory information and Android installation guidance.</p>
+<p>FOZAYX Games is a digital project under The Afnan Yaz Productions. It presents original Android game projects, application projects, selected third-party title information and practical Android guides.</p>
 </details>
 
 <details class="faq-item">
-<summary>How do I find a particular game?</summary>
-<p>Visit the collection section and use the search field. You can also select a category such as Racing, Action, Sports, Arcade, AI or Music.</p>
+<summary>Who develops the original FOZAYX games?</summary>
+<p>The original projects listed here are associated with The Afnan Yaz Productions. The collection currently identifies T-Rex Jungle Run, Highway Rush 2D, BMX Boy 3D, Skater Boy, Voltwing Rooftops and Skyforge Vanguard as original game projects.</p>
+</details>
+
+<details class="faq-item">
+<summary>Does FOZAYX Games develop every listed title?</summary>
+<p>No. BMX Boy and Spider-Man Ultimate Power are identified as third-party titles. They are not presented as original FOZAYX games. Their names, software and related intellectual property belong to their respective rights holders.</p>
+</details>
+
+<details class="faq-item">
+<summary>Why are some third-party download buttons unavailable?</summary>
+<p>A third-party application should only be redistributed when the necessary permission or legal rights exist. Where redistribution authorization has not been established, we do not provide a hosted APK download from this website.</p>
+</details>
+
+<details class="faq-item">
+<summary>Are the collection images actual gameplay screenshots?</summary>
+<p>Not necessarily. Some entries use app icons, supplied project artwork or category illustrations. These images identify the listing and should not be treated as proof of gameplay or in-game graphics.</p>
+</details>
+
+<details class="faq-item">
+<summary>What is Arena 1.0.1?</summary>
+<p>Arena 1.0.1 is listed as an AI-related Web-to-App project associated with The Afnan Yaz Productions. This page does not claim a specific AI model, accuracy score or technical capability without supporting information.</p>
+</details>
+
+<details class="faq-item">
+<summary>What is AURA Music Player?</summary>
+<p>AURA Music Player is an Android music application project associated with The Afnan Yaz Productions. Its tagline is Music Beyond Boundaries. The project uses Echo Nightly as an architectural and structural reference, and applicable open-source license obligations must be followed where source code is incorporated.</p>
 </details>
 
 <details class="faq-item">
 <summary>Are all APK files compatible with every Android phone?</summary>
-<p>No. Compatibility can depend on Android version, processor architecture, device configuration and the app's requirements. Always check compatibility before installing.</p>
+<p>No. Compatibility may depend on Android version, processor architecture, device configuration, storage and the application's requirements. Check the developer's information before installation.</p>
 </details>
 
 <details class="faq-item">
 <summary>Why does Android show an installation warning?</summary>
-<p>Android may show a warning when an application is installed from outside an app store. Review the file source and security warnings carefully. Do not continue if you do not trust the application.</p>
+<p>Android may show a warning when an application is installed from outside an app store. Review the source and security information carefully. Do not continue if you cannot verify or trust the application.</p>
+</details>
+
+<details class="faq-item">
+<summary>Does FOZAYX Games guarantee that every APK is safe?</summary>
+<p>No. A website listing cannot guarantee that every file is risk-free. Visitors should verify the publisher and source, review permissions and pay attention to Android security warnings before installing an application.</p>
 </details>
 
 <details class="faq-item">
 <summary>What should I do if a download link does not work?</summary>
-<p>Try again later and check your internet connection. If the link remains unavailable, report the issue through the project's GitHub feedback page.</p>
+<p>Check your internet connection and try again later. If the link remains unavailable, report the project name and the problem through the GitHub feedback page.</p>
 </details>
 
 <details class="faq-item">
-<summary>Does FOZAYX Games develop every listed application?</summary>
-<p>Not necessarily. The collection can include projects and third-party titles. A listing does not imply ownership, official affiliation or endorsement by the original publisher.</p>
-</details>
-
-<details class="faq-item">
-<summary>Does this website guarantee that an APK is safe?</summary>
-<p>No website can guarantee that every downloaded file is risk-free. Visitors should check the source, review permissions and use their device's security features before installing an application.</p>
-</details>
-
-<details class="faq-item">
-<summary>How can I report a problem or suggest a correction?</summary>
-<p>Use the Contact & Feedback link below to open the project's GitHub issues page. Include the page or game name and a clear explanation of the issue.</p>
+<summary>How can I report a copyright concern?</summary>
+<p>Use the Contact & Feedback section. Identify the affected title, image or file, explain your concern and provide enough information for the website operator to review it.</p>
 </details>
 
 </div>
@@ -1294,17 +1264,20 @@ FOZAYX Games is not automatically affiliated with the original developers, publi
 <div class="about-main">
 <span class="pill">✦ THE AFNAN YAZ PRODUCTIONS</span>
 <h2>Built Around<br><span class="gradient">Digital Adventures.</span></h2>
-
 <p>
-FOZAYX Games is a digital project created under The Afnan Yaz Productions. The website brings together a selection of mobile game and application listings in one place.
+FOZAYX Games is an independent digital project created under The Afnan Yaz Productions. The website brings together a collection of original game projects, Android application projects and selected third-party title information.
 </p>
-
 <p style="margin-top:13px">
-Our aim is to make browsing straightforward. Visitors can explore categories, read introductory information, learn how Android APK installation works and find the relevant download link.
+Our collection includes different kinds of work. Some entries are original game projects, while others are applications or third-party titles that are clearly identified. This distinction matters because visitors should be able to understand who is responsible for a project and who owns the underlying intellectual property.
 </p>
-
 <p style="margin-top:13px">
-We believe a useful game-discovery website should provide more than a download button. It should also help visitors understand what they are downloading, what to check before installation and where to report problems.
+We also publish practical information about Android installation, APK compatibility, device requirements and app permissions. These guides are intended to help visitors understand common installation questions and make more informed decisions before installing software.
+</p>
+<p style="margin-top:13px">
+We believe a useful project website should provide more than a download link. It should explain what a project is, identify what information is known, disclose external references and avoid presenting guesses as technical facts.
+</p>
+<p style="margin-top:13px">
+The collection is a work in progress. As verified information becomes available, project pages can be improved with accurate version details, genuine application screenshots, compatibility information and development updates.
 </p>
 </div>
 
@@ -1312,7 +1285,7 @@ We believe a useful game-discovery website should provide more than a download b
 <div class="about-mark">✧</div>
 <h3>Explore. Learn. Play.</h3>
 <p>
-A mobile-friendly collection for people interested in games, Android apps and digital entertainment.
+A mobile-friendly collection for people interested in original games, Android applications, independent digital projects and practical technology information.
 </p>
 <a class="primary-btn" href="#games" style="align-self:flex-start;margin-top:22px">Explore Collection ↑</a>
 </div>
@@ -1325,20 +1298,40 @@ A mobile-friendly collection for people interested in games, Android apps and di
 <div>
 <div class="overline">GET IN TOUCH</div>
 <h2>Contact & Feedback<span class="gradient">.</span></h2>
-<p>Found a broken link or incorrect information? Let us know.</p>
+<p>Report a broken link, incorrect information or a rights-related concern.</p>
 </div>
 </div>
 
 <div class="content-panel">
 <h3>Report a website issue</h3>
 <p>
-If you notice an incorrect game description, a broken download link, an image problem or another website issue, you can report it through the project's GitHub issue tracker.
+If you notice an incorrect project description, a broken download link, an image problem or another website issue, you can report it through the project's GitHub issue tracker. Please identify the affected project so the issue can be reviewed.
 </p>
 <p style="margin-top:14px">
-<a href="https://github.com/Fozayelafnan/theafnanyazproductions.github.io/issues" target="_blank" rel="noopener noreferrer">Open FOZAYX Games Feedback & Issues ↗</a>
+<a href="https://github.com/Fozayelafnan/theafnanyazproductions.github.io/issues"
+target="_blank" rel="noopener noreferrer">Open FOZAYX Games Feedback & Issues ↗</a>
 </p>
-<p style="margin-top:14px">
-When reporting an issue, include the page or game name, a description of the problem and steps to reproduce it if possible. Do not include passwords or other private information.
+
+<h3>Copyright and content concerns</h3>
+<p>
+If you are a developer, publisher or rights holder and believe that material on this website uses your work without permission, please report the relevant page or file. Include the material in question and enough information to identify your rights-related concern.
+</p>
+
+<h3>What to include in a report</h3>
+<ul>
+<li>The game, app, image or page name.</li>
+<li>The URL or download link involved.</li>
+<li>A clear explanation of the issue.</li>
+<li>For a correction, the accurate information or a reliable source where possible.</li>
+<li>For a rights concern, enough information to identify the relevant material and your concern.</li>
+</ul>
+<p>
+Do not include passwords, payment information or other sensitive personal details in a public issue report.
+</p>
+
+<h3>Response and review</h3>
+<p>
+Reports are reviewed when the website operator is able to assess them. Sending a report does not guarantee a particular response time or outcome. Where an issue is confirmed, the relevant description, link or material may be corrected or removed.
 </p>
 </div>
 </section>
@@ -1349,58 +1342,76 @@ When reporting an issue, include the page or game name, a description of the pro
 <div>
 <div class="overline">WEBSITE INFORMATION</div>
 <h2>Privacy Policy<span class="gradient">.</span></h2>
-<p>How this website may use cookies and third-party services.</p>
+<p>Information about analytics, advertising and external services.</p>
 </div>
 </div>
 
 <div class="content-panel">
 <p><strong>Last updated: November 22, 2026</strong></p>
 
-<h3>Introduction</h3>
+<h3>1. Introduction</h3>
 <p>
-This Privacy Policy explains how FOZAYX Games handles information when visitors use this website. We aim to explain the third-party services used on the site and the choices visitors may have.
+This Privacy Policy explains how FOZAYX Games may process information when visitors use this website. It describes the analytics and advertising services configured on the site, as well as choices visitors may have through their browser or relevant service settings.
 </p>
 
-<h3>Information collected automatically</h3>
+<h3>2. Information processed when you visit</h3>
 <p>
-When you visit a website, your browser and hosting infrastructure may process technical information such as browser type, device information, IP address, requested pages and access times. This information may be processed by service providers to deliver, secure and maintain the website.
+When a website is opened, the browser, hosting provider and related services may process technical information needed to deliver and secure the page. Depending on the services involved, this may include IP address, browser type, device information, requested pages, approximate access time and technical diagnostic information.
 </p>
 
-<h3>Google Analytics</h3>
+<h3>3. Google Analytics</h3>
 <p>
-This website uses Google Analytics to understand general website usage, such as which pages are visited and how visitors interact with the site. Google Analytics may use cookies or similar technologies to collect information. Google's processing is subject to its own privacy terms and policies.
-</p>
-<p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
-
-<h3>Google AdSense and advertising cookies</h3>
-<p>
-This website uses Google AdSense. Google and its advertising partners may use cookies or similar technologies to serve, measure and personalize advertisements, subject to applicable settings, consent requirements and regional laws.
+Google Analytics is configured on this website to help understand general site usage. Depending on the configuration and visitor settings, analytics technologies may process information about page views, interactions, browser or device details and related usage data. Analytics information is subject to Google's applicable terms and privacy practices.
 </p>
 <p>
-Visitors can learn about Google's advertising practices and available controls through <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google's Advertising Policies and Technologies</a>.
+Read more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
 </p>
 
-<h3>Cookies and choices</h3>
+<h3>4. Google AdSense and advertising</h3>
 <p>
-Cookies are small files that websites and third-party services may store in a browser. They can support analytics, advertising and website functionality. You can manage or delete cookies through your browser settings. Blocking cookies may affect certain third-party features.
+Google AdSense code is included on this website. If advertisements are served, Google and its partners may use cookies or similar technologies to deliver, measure, limit or personalize advertising, depending on applicable settings, visitor choices and regional requirements.
+</p>
+<p>
+The presence of AdSense code does not mean that advertisements are currently being displayed or that an AdSense application has been approved. Advertising services are subject to Google's policies and the settings available to visitors.
+</p>
+<p>
+Learn more: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Technologies</a>.
+</p>
+<p>
+Information about managing advertising personalization is available at <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google My Ad Center</a>, where supported.
 </p>
 
-<h3>Third-party links and downloads</h3>
+<h3>5. Cookies and browser settings</h3>
 <p>
-This website links to external services and file-hosting locations. When you open an external website or download a file, that service's own privacy policy and terms apply. FOZAYX Games does not control the privacy practices of external websites.
+Cookies are small data files that websites or third-party services may store in a browser. They can support analytics, advertising and website functionality. Visitors can review cookie controls through their browser settings. Blocking or deleting cookies may affect some website or third-party service features.
 </p>
 
-<h3>Children's privacy</h3>
+<h3>6. External websites and downloads</h3>
 <p>
-This website is not intended to knowingly collect personal information from children. Parents and guardians should supervise children's internet use and app installations.
+FOZAYX Games may link to external websites, repositories and file-hosting services. When a visitor opens an external website or downloads a file, that service may process information under its own privacy policy and terms. FOZAYX Games does not control the privacy practices of external services.
 </p>
 
-<h3>Policy updates</h3>
+<h3>7. Children's privacy</h3>
 <p>
-This policy may be updated when website features, services or legal requirements change. The latest version will be published on this page.
+This website is not designed to knowingly request personal information from children. Parents and guardians should supervise children's use of websites and installation of applications. If you believe that personal information has been submitted inappropriately, please contact the website operator.
 </p>
 
-<h3>Contact</h3>
+<h3>8. Data retention and third-party processing</h3>
+<p>
+Analytics, advertising and hosting providers may process information according to their own retention policies and applicable legal requirements. FOZAYX Games does not claim to control the internal data retention practices of those providers.
+</p>
+
+<h3>9. Privacy choices</h3>
+<p>
+Visitors may have choices relating to cookies, analytics and advertising personalization through their browser, Google account settings or relevant regional consent tools. The availability of these choices may depend on location, device and service configuration.
+</p>
+
+<h3>10. Policy changes</h3>
+<p>
+This policy may be revised when the website's services, features or applicable requirements change. The latest version will be published on this page.
+</p>
+
+<h3>11. Contact</h3>
 <p>
 For privacy-related questions, use the <a href="#contact">Contact & Feedback</a> section.
 </p>
@@ -1420,45 +1431,51 @@ For privacy-related questions, use the <a href="#contact">Contact & Feedback</a>
 <div class="content-panel">
 <p><strong>Last updated: November 22, 2026</strong></p>
 
-<h3>Acceptance of terms</h3>
+<h3>1. Acceptance of terms</h3>
 <p>
 By accessing FOZAYX Games, you agree to use the website responsibly and in accordance with applicable laws. If you do not agree with these terms, please stop using the website.
 </p>
 
-<h3>Website content</h3>
+<h3>2. Website information</h3>
 <p>
-Descriptions, category labels and guides are provided for general informational purposes. We aim to keep information useful, but we do not guarantee that every description, external link or compatibility detail is complete, current or error-free.
+Descriptions, category labels, installation guides and other material are provided for general informational purposes. We aim to make the information useful and accurate, but application features, external links, compatibility details and file availability can change. Visitors should verify important product details with the original developer.
 </p>
 
-<h3>Downloads and external services</h3>
+<h3>3. Original and third-party projects</h3>
 <p>
-Download links may direct visitors to third-party hosting services or project-controlled files. Visitors are responsible for reviewing the source, checking device compatibility and deciding whether to install an application.
+Some entries are original projects associated with The Afnan Yaz Productions. Other entries identify third-party titles. Ownership labels are provided to distinguish these categories. A listing does not transfer ownership or imply an official relationship with a third-party developer or publisher.
 </p>
 
-<h3>Acceptable use</h3>
+<h3>4. Downloads and external services</h3>
+<p>
+Some links may direct visitors to external websites, repositories or hosted application files. Visitors should review the source, check device compatibility and decide whether to install an application. Downloading or installing a file is the visitor's decision.
+</p>
+
+<h3>5. Acceptable use</h3>
 <ul>
 <li>Do not use this website for unlawful activity.</li>
-<li>Do not attempt to disrupt or damage the website.</li>
-<li>Do not misuse the website's content or contact channels.</li>
-<li>Respect the rights of developers and content owners.</li>
+<li>Do not attempt to disrupt, damage or interfere with the website.</li>
+<li>Do not misuse the feedback or contact channels.</li>
+<li>Respect the intellectual property and privacy rights of others.</li>
+<li>Do not treat a listing as proof of official endorsement or authorization.</li>
 </ul>
 
-<h3>Intellectual property</h3>
+<h3>6. Intellectual property</h3>
 <p>
-FOZAYX Games branding and original website content are associated with The Afnan Yaz Productions unless otherwise stated. Third-party names, logos, game titles and trademarks remain the property of their respective owners.
+FOZAYX Games branding and original website material are associated with The Afnan Yaz Productions unless otherwise stated. Third-party game titles, logos, artwork, software and trademarks remain the property of their respective owners. Open-source components remain subject to their applicable licenses and notices.
 </p>
 
-<h3>Changes to the website</h3>
+<h3>7. Changes and availability</h3>
 <p>
-We may update, remove or reorganize website content and links as projects change. External downloads may become unavailable without notice.
+We may update, remove or reorganize website content and links as projects change. External downloads may become unavailable, and we cannot guarantee uninterrupted access to third-party services.
 </p>
 
-<h3>Limitation</h3>
+<h3>8. Limitation</h3>
 <p>
-The website is provided on an informational basis. To the extent permitted by applicable law, we are not responsible for issues caused by third-party websites, external downloads, incompatible devices or software installed by visitors.
+The website is provided for informational purposes. To the extent permitted by applicable law, FOZAYX Games is not responsible for issues caused by external websites, third-party downloads, incompatible devices or software installed by visitors.
 </p>
 
-<h3>Contact</h3>
+<h3>9. Contact</h3>
 <p>
 Questions about these terms can be submitted through the <a href="#contact">Contact & Feedback</a> section.
 </p>
@@ -1471,34 +1488,44 @@ Questions about these terms can be submitted through the <a href="#contact">Cont
 <div>
 <div class="overline">IMPORTANT NOTICE</div>
 <h2>Disclaimer<span class="gradient">.</span></h2>
-<p>Information about third-party games, apps and downloads.</p>
+<p>Information about original projects, third-party titles and downloads.</p>
 </div>
 </div>
 
 <div class="content-panel">
-<h3>Independent project</h3>
+<h3>Independent website</h3>
 <p>
-FOZAYX Games is an independent website. Unless a specific relationship is clearly stated, the website is not affiliated with, endorsed by or officially connected to third-party game developers, publishers or trademark owners.
+FOZAYX Games is an independent website under The Afnan Yaz Productions. Unless a specific relationship is clearly stated, the website is not affiliated with, endorsed by or officially connected to third-party developers, publishers or trademark owners.
 </p>
 
-<h3>Third-party trademarks</h3>
+<h3>Third-party trademarks and artwork</h3>
 <p>
-Names such as game titles and product names are used to identify the relevant products. All trademarks, logos and intellectual property belong to their respective owners.
+Game titles, product names, logos, characters and other third-party materials may be protected by intellectual property laws. They remain the property of their respective rights holders. Their use to identify a product does not mean that FOZAYX Games owns or represents that product.
 </p>
 
-<h3>Downloads and device safety</h3>
+<h3>Downloads and permissions</h3>
 <p>
-Applications and APK files may come from external sources. Visitors should verify the file source, check compatibility and review security warnings before installing. FOZAYX Games does not guarantee that every external file is safe, available or compatible with every device.
+Applications and APK files may be hosted by or linked to external sources. Files should only be redistributed when the necessary rights or authorization exist. Visitors should verify the publisher and file source, check compatibility and review security warnings before installing.
 </p>
 
-<h3>No guarantee of performance</h3>
+<h3>Open-source software</h3>
 <p>
-Device performance depends on hardware, Android version, available memory, storage and application requirements. We do not guarantee a specific frame rate, performance level or compatibility result.
+Some projects may use external open-source software as a dependency or reference. The applicable license terms, notices and source-distribution obligations must be followed where required. The presence of an open-source reference does not mean that FOZAYX Games created the original project.
 </p>
 
-<h3>Corrections</h3>
+<h3>No guarantee of safety or compatibility</h3>
 <p>
-If you believe information on this website is inaccurate or that content infringes your rights, please contact us through the <a href="#contact">feedback page</a> with sufficient details for review.
+FOZAYX Games does not guarantee that every external file is safe, available, free of errors or compatible with every Android device. Device performance and installation results depend on hardware, Android version, storage, application requirements and other factors.
+</p>
+
+<h3>Information accuracy</h3>
+<p>
+The descriptions on this website are introductory project information. Unless explicitly stated and supported, they should not be interpreted as independent technical tests, performance benchmarks, professional reviews or guarantees of specific features.
+</p>
+
+<h3>Corrections and rights concerns</h3>
+<p>
+If you believe that information is inaccurate or material infringes your rights, contact us through the <a href="#contact">Contact & Feedback</a> section. Include the relevant page or file and enough information for the concern to be reviewed.
 </p>
 </div>
 </section>
@@ -1512,9 +1539,10 @@ If you believe information on this website is inaccurate or that content infring
 
 <div class="footer-links">
 <a href="#home">Home</a>
-<a href="#games">Games</a>
-<a href="#guides">Guides</a>
-<a href="#editorial">Our Approach</a>
+<a href="#games">Collection</a>
+<a href="#guides">Android Guides</a>
+<a href="#development">Development</a>
+<a href="#editorial">Editorial Policy</a>
 <a href="#faq">FAQ</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
@@ -1530,70 +1558,58 @@ If you believe information on this website is inaccurate or that content infring
 <script>
 (function(){
 
-const search=document.getElementById("gameSearch");
-const cards=Array.from(document.querySelectorAll(".game"));
-const filters=Array.from(document.querySelectorAll(".filter"));
-const count=document.getElementById("gameCount");
-const empty=document.getElementById("emptyState");
+const search = document.getElementById("gameSearch");
+const cards = Array.from(document.querySelectorAll(".game"));
+const filters = Array.from(document.querySelectorAll(".filter"));
+const count = document.getElementById("gameCount");
+const empty = document.getElementById("emptyState");
 
-let selectedCategory="all";
+let selectedCategory = "all";
 
 function updateGames(){
 
-const query=search.value.trim().toLowerCase();
+const query = search.value.trim().toLowerCase();
+let visible = 0;
 
-let visible=0;
-let gameCount=0;
-let aiCount=0;
-let musicCount=0;
+cards.forEach(card => {
 
-cards.forEach(card=>{
+const name = (
+(card.dataset.name || "") + " " + card.innerText
+).toLowerCase();
 
-const name=((card.dataset.name||"")+" "+card.innerText).toLowerCase();
-const category=card.dataset.category;
+const category = card.dataset.category;
 
-const show=
-name.includes(query)&&
-(selectedCategory==="all"||category===selectedCategory);
+const show =
+name.includes(query) &&
+(selectedCategory === "all" || category === selectedCategory);
 
-card.style.display=show?"":"none";
+card.style.display = show ? "" : "none";
 
-if(show){
-visible++;
-
-if(category==="ai"){
-aiCount++;
-}else if(category==="music"){
-musicCount++;
-}else{
-gameCount++;
-}
-}
+if(show) visible++;
 
 });
 
-count.textContent=
-String(visible).padStart(2,"0")+
-(visible===1?" RESULT":" RESULTS")+
-" · "+gameCount+" GAMES · "+aiCount+" AI PROJECT · "+musicCount+" MUSIC APP";
+count.textContent =
+String(visible).padStart(2,"0") +
+(visible === 1 ? " LISTING" : " LISTINGS");
 
-empty.style.display=visible===0?"block":"none";
+empty.style.display = visible === 0 ? "block" : "none";
 
 }
 
-search.addEventListener("input",updateGames);
+search.addEventListener("input", updateGames);
 
-filters.forEach(button=>{
+filters.forEach(button => {
 
-button.addEventListener("click",()=>{
+button.addEventListener("click", () => {
 
-selectedCategory=button.dataset.filter;
+selectedCategory = button.dataset.filter;
 
-filters.forEach(item=>{
+filters.forEach(item => {
 
-const active=item===button;
-item.classList.toggle("active",active);
-item.setAttribute("aria-pressed",String(active));
+const active = item === button;
+item.classList.toggle("active", active);
+item.setAttribute("aria-pressed", String(active));
 
 });
 
