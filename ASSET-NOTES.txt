@@ -1,0 +1,14 @@
+FOZAYX Games website package
+
+Required image assets to place in the website root before publishing:
+- fx-logo.png (FOZAYX logo used in the main navigation and social preview)
+- hq720.jpg (Spider-Man Ultimate Power listing artwork, if you intend to use it)
+- Pro_Evolution_Soccer_2013_cover.jpg (PES 2013 cover image supplied by the site owner)
+
+Optional locally hosted files referenced by existing listings:
+- cricket07.apk
+- aura.apk
+
+The PES 2013 page links to the supplied Google Drive archive ID. The Google Drive page title was visible as PES-2013.zip; the file contents were not inspected.
+
+AdSense approval cannot be guaranteed by code. Before applying, ensure you have rights to distribute every downloadable file, remove unauthorized third-party APK hosting, publish accurate contact/privacy information, test all pages and links, and comply with current Google publisher policies.
