@@ -149,7 +149,25 @@ const games=[
 {id:"pes-2013",name:"PES 2013",cat:"sports",type:"Sports · Football · ZIP Package",owner:"THIRD-PARTY GAME · NOT OUR GAME",third:true,art:"",image:"Pro_Evolution_Soccer_2013_cover.jpg",fallback:"assets/logos/pes-2013.svg",desc:"Pro Evolution Soccer 2013 is a third-party football game. This listing provides the supplied cover artwork and the provided Google Drive ZIP download link. The game and its trademarks belong to their respective rights holders.",download:"https://drive.google.com/uc?export=download&id=1xIZwRfH6Km8raEyayRCHkKCtt6FurK9s",view:"https://drive.google.com/file/d/1xIZwRfH6Km8raEyayRCHkKCtt6FurK9s/view?usp=drivesdk",kind:"zip"}
 ];
 const grid=document.getElementById("games"),search=document.getElementById("search");let category="all";
-function render(){const q=search.value.toLowerCase().trim();const filtered=games.filter(g=>(category==="all"||g.cat===category)&&(g.name+" "+g.desc+" "+g.cat+" "+g.type).toLowerCase().includes(q));grid.innerHTML="";const status=document.getElementById("search-status");status.textContent=`Showing ${filtered.length} of ${games.length} listings`;if(!filtered.length){grid.innerHTML='<div class="empty-state"><strong>No matching projects found.</strong><br>Try another title or choose a different category.</div>';return;}filtered.forEach(g=>{const a=g.image?`<img src="${g.image}" alt="${g.name} artwork" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}else{this.outerHTML='<div class=\"logo-fallback\">${g.name}<small>FOZAYX GAMES</small></div>'}" data-fallback="${g.fallback||''}">`:`<span class="emoji">${g.art}</span>`;grid.insertAdjacentHTML("beforeend",`<article class="game"><a href="games/${g.id}.html"><div class="art"><span class="tag">${g.third?"THIRD-PARTY":"FOZAYX PROJECT"}</span>${a}</div><div class="info"><h3>${g.name}</h3><p>${g.desc}</p><span class="ownership ${g.third?"third":""}">${g.owner}</span><div class="meta"><span>${g.type}</span><span class="details">VIEW DETAILS ↗</span></div></div></a></article>`)});}
+function render(){
+ const q=search.value.toLowerCase().trim();
+ const filtered=games.filter(g=>(category==="all"||g.cat===category)&&(g.name+" "+g.desc+" "+g.cat+" "+g.type).toLowerCase().includes(q));
+ grid.innerHTML="";
+ const status=document.getElementById("search-status");
+ status.textContent=`Showing ${filtered.length} of ${games.length} listings`;
+ if(!filtered.length){grid.innerHTML='<div class="empty-state"><strong>No matching projects found.</strong><br>Try another title or choose a different category.</div>';return;}
+ filtered.forEach(g=>{
+  const a=g.image?`<img src="${g.image}" alt="${g.name} artwork" loading="lazy" data-fallback="${g.fallback||''}">`:`<span class="emoji">${g.art}</span>`;
+  grid.insertAdjacentHTML("beforeend",`<article class="game"><a href="games/${g.id}.html"><div class="art"><span class="tag">${g.third?"THIRD-PARTY":"FOZAYX PROJECT"}</span>${a}</div><div class="info"><h3>${g.name}</h3><p>${g.desc}</p><span class="ownership ${g.third?"third":""}">${g.owner}</span><div class="meta"><span>${g.type}</span><span class="details">VIEW DETAILS ↗</span></div></div></a></article>`);
+ });
+ grid.querySelectorAll('.art img').forEach(img=>img.addEventListener('error',function(){
+  const fallback=this.dataset.fallback;
+  if(fallback && !this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=fallback;return;}
+  const card=document.createElement('div');card.className='logo-fallback';
+  card.appendChild(document.createTextNode(this.alt.replace(/ artwork$/,'')));
+  const small=document.createElement('small');small.textContent='FOZAYX GAMES';card.appendChild(small);this.replaceWith(card);
+ }));
+}
 document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{category=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()}));search.addEventListener("input",render);render();
 </script>
 </body></html>
